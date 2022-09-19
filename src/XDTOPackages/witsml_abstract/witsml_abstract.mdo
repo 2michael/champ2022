@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21beb87a-a7f6-421a-8c00-0532a259feef">
+  <name>witsml_abstract</name>
+  <synonym>
+    <key>ru</key>
+    <value>abstract</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>abstract</value>
+  </synonym>
+  <namespace>http://www.energistics.org/schemas/abstract</namespace>
+</mdclass:XDTOPackage>

@@ -1,0 +1,2514 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.witsml.org/schemas/131" elementFormQualified="true" attributeFormQualified="false">
+	<property xmlns:d2p1="http://www.witsml.org/schemas/131" name="bhaRuns" type="d2p1:obj_bhaRuns"/>
+	<valueType name="abstractBoolean" base="xs:boolean" variety="Atomic">
+		<pattern>.+</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="abstractCommentString" base="d2p1:abstractMaximumLengthString" variety="Atomic"/>
+	<valueType name="abstractDate" base="xs:date" variety="Atomic">
+		<pattern>.+</pattern>
+	</valueType>
+	<valueType name="abstractDateTime" base="xs:dateTime" variety="Atomic">
+		<pattern>.+</pattern>
+	</valueType>
+	<valueType name="abstractDouble" base="xs:double" variety="Atomic">
+		<pattern>.+</pattern>
+	</valueType>
+	<valueType name="abstractInt" base="xs:int" variety="Atomic">
+		<pattern>.+</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="abstractMaximumLengthString" base="d2p1:abstractString" variety="Atomic" maxLength="4000"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="abstractNameString" base="d2p1:abstractString" variety="Atomic" maxLength="64"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="abstractPositiveCount" base="d2p1:abstractShort" variety="Atomic" minInclusive="1"/>
+	<valueType name="abstractShort" base="xs:short" variety="Atomic">
+		<pattern>.+</pattern>
+	</valueType>
+	<valueType name="abstractString" base="xs:string" variety="Atomic" minLength="1" whiteSpace="collapse"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="abstractTypeEnum" base="d2p1:abstractString" variety="Atomic" maxLength="40"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="abstractUidString" base="d2p1:abstractString" variety="Atomic" maxLength="64">
+		<pattern>[^ ]*</pattern>
+	</valueType>
+	<valueType name="abstractUncollapsedString" base="xs:string" variety="Atomic" minLength="1"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="abstractUomEnum" base="d2p1:abstractString" variety="Atomic" maxLength="24"/>
+	<valueType name="abstractYear" base="xs:gYear" variety="Atomic">
+		<pattern>.+</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="accelerationLinearUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m/s2</enumeration>
+		<enumeration>cm/s2</enumeration>
+		<enumeration>ft/s2</enumeration>
+		<enumeration>Gal</enumeration>
+		<enumeration>mgn</enumeration>
+		<enumeration>gn</enumeration>
+		<enumeration>mGal</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="anglePerLengthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>rad/m</enumeration>
+		<enumeration>dega/30ft</enumeration>
+		<enumeration>dega/ft</enumeration>
+		<enumeration>dega/100ft</enumeration>
+		<enumeration>dega/m</enumeration>
+		<enumeration>dega/30m</enumeration>
+		<enumeration>rad/ft</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="anglePerTimeUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>rad/s</enumeration>
+		<enumeration>c/s</enumeration>
+		<enumeration>dega/h</enumeration>
+		<enumeration>dega/min</enumeration>
+		<enumeration>dega/s</enumeration>
+		<enumeration>rev/s</enumeration>
+		<enumeration>rpm</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="areaPerAreaUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>Euc</enumeration>
+		<enumeration>%</enumeration>
+		<enumeration>in2/ft2</enumeration>
+		<enumeration>in2/in2</enumeration>
+		<enumeration>m2/m2</enumeration>
+		<enumeration>mm2/mm2</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="areaUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m2</enumeration>
+		<enumeration>acre</enumeration>
+		<enumeration>b</enumeration>
+		<enumeration>cm2</enumeration>
+		<enumeration>ft2</enumeration>
+		<enumeration>ha</enumeration>
+		<enumeration>in2</enumeration>
+		<enumeration>km2</enumeration>
+		<enumeration>mi2</enumeration>
+		<enumeration>miUS2</enumeration>
+		<enumeration>mm2</enumeration>
+		<enumeration>um2</enumeration>
+		<enumeration>yd2</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="densityUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>kg/m3</enumeration>
+		<enumeration>10Mg/m3</enumeration>
+		<enumeration>dAPI</enumeration>
+		<enumeration>g/cm3</enumeration>
+		<enumeration>g/dm3</enumeration>
+		<enumeration>g/galUK</enumeration>
+		<enumeration>g/galUS</enumeration>
+		<enumeration>g/L</enumeration>
+		<enumeration>g/m3</enumeration>
+		<enumeration>grain/ft3</enumeration>
+		<enumeration>grain/galUS</enumeration>
+		<enumeration>grain/100ft3</enumeration>
+		<enumeration>kg/dm3</enumeration>
+		<enumeration>kg/L</enumeration>
+		<enumeration>Mg/m3</enumeration>
+		<enumeration>lbm/10bbl</enumeration>
+		<enumeration>lbm/bbl</enumeration>
+		<enumeration>lbm/ft3</enumeration>
+		<enumeration>lbm/galUK</enumeration>
+		<enumeration>lbm/1000galUK</enumeration>
+		<enumeration>lbm/galUS</enumeration>
+		<enumeration>lbm/1000galUS</enumeration>
+		<enumeration>lbm/in3</enumeration>
+		<enumeration>lbm/Mbbl</enumeration>
+		<enumeration>mg/dm3</enumeration>
+		<enumeration>mg/galUS</enumeration>
+		<enumeration>mg/L</enumeration>
+		<enumeration>mg/m3</enumeration>
+		<enumeration>ug/cm3</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="dimensionlessUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>Euc</enumeration>
+		<enumeration>%</enumeration>
+		<enumeration>cEuc</enumeration>
+		<enumeration>mEuc</enumeration>
+		<enumeration>nEuc</enumeration>
+		<enumeration>uEuc</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="dynamicViscosityUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>Pa.s</enumeration>
+		<enumeration>cP</enumeration>
+		<enumeration>P</enumeration>
+		<enumeration>psi.s</enumeration>
+		<enumeration>dyne.s/cm2</enumeration>
+		<enumeration>kgf.s/m2</enumeration>
+		<enumeration>lbf.s/ft2</enumeration>
+		<enumeration>lbf.s/in2</enumeration>
+		<enumeration>mPa.s</enumeration>
+		<enumeration>N.s/m2</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="electricCurrentUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>A</enumeration>
+		<enumeration>MA</enumeration>
+		<enumeration>kA</enumeration>
+		<enumeration>mA</enumeration>
+		<enumeration>nA</enumeration>
+		<enumeration>pA</enumeration>
+		<enumeration>uA</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="electricPotentialUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>V</enumeration>
+		<enumeration>kV</enumeration>
+		<enumeration>mV</enumeration>
+		<enumeration>MV</enumeration>
+		<enumeration>uV</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="energyPerAreaUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>N/m</enumeration>
+		<enumeration>erg/cm2</enumeration>
+		<enumeration>J/cm2</enumeration>
+		<enumeration>J/m2</enumeration>
+		<enumeration>kgf.m/cm2</enumeration>
+		<enumeration>lbf.ft/in2</enumeration>
+		<enumeration>mJ/cm2</enumeration>
+		<enumeration>mJ/m2</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="equivalentPerMassUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>eq/kg</enumeration>
+		<enumeration>meq/g</enumeration>
+		<enumeration>meq/100g</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="forcePerLengthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>N/30m</enumeration>
+		<enumeration>N/m</enumeration>
+		<enumeration>dyne/cm</enumeration>
+		<enumeration>kN/m</enumeration>
+		<enumeration>kgf/cm</enumeration>
+		<enumeration>lbf/100ft</enumeration>
+		<enumeration>lbf/30m</enumeration>
+		<enumeration>lbf/ft</enumeration>
+		<enumeration>lbf/in</enumeration>
+		<enumeration>mN/km</enumeration>
+		<enumeration>mN/m</enumeration>
+		<enumeration>pdl/cm</enumeration>
+		<enumeration>tonfUK/ft</enumeration>
+		<enumeration>tonfUS/ft</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="forcePerVolumeUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>N/m3</enumeration>
+		<enumeration>atm/100m</enumeration>
+		<enumeration>atm/m</enumeration>
+		<enumeration>bar/km</enumeration>
+		<enumeration>bar/m</enumeration>
+		<enumeration>GPa/cm</enumeration>
+		<enumeration>kPa/100m</enumeration>
+		<enumeration>kPa/m</enumeration>
+		<enumeration>lbf/ft3</enumeration>
+		<enumeration>lbf/galUS</enumeration>
+		<enumeration>MPa/m</enumeration>
+		<enumeration>psi/ft</enumeration>
+		<enumeration>psi/100ft</enumeration>
+		<enumeration>psi/kft</enumeration>
+		<enumeration>psi/m</enumeration>
+		<enumeration>Pa/m</enumeration>
+		<enumeration>atm/ft</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="forceUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>N</enumeration>
+		<enumeration>daN</enumeration>
+		<enumeration>dyne</enumeration>
+		<enumeration>gf</enumeration>
+		<enumeration>kdyne</enumeration>
+		<enumeration>kgf</enumeration>
+		<enumeration>klbf</enumeration>
+		<enumeration>kN</enumeration>
+		<enumeration>lbf</enumeration>
+		<enumeration>Mgf</enumeration>
+		<enumeration>mN</enumeration>
+		<enumeration>MN</enumeration>
+		<enumeration>ozf</enumeration>
+		<enumeration>pdl</enumeration>
+		<enumeration>tonfUK</enumeration>
+		<enumeration>tonfUS</enumeration>
+		<enumeration>uN</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="frequencyUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>Hz</enumeration>
+		<enumeration>c/s</enumeration>
+		<enumeration>GHz</enumeration>
+		<enumeration>kHz</enumeration>
+		<enumeration>mHz</enumeration>
+		<enumeration>MHz</enumeration>
+		<enumeration>uHz</enumeration>
+		<enumeration>1/s</enumeration>
+		<enumeration>1/a</enumeration>
+		<enumeration>1/d</enumeration>
+		<enumeration>1/h</enumeration>
+		<enumeration>1/min</enumeration>
+		<enumeration>1/wk</enumeration>
+		<enumeration>kEuc/s</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="illuminanceUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>lx</enumeration>
+		<enumeration>lm/m2</enumeration>
+		<enumeration>footcandle</enumeration>
+		<enumeration>klx</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="lengthPerLengthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>%</enumeration>
+		<enumeration>ft/100ft</enumeration>
+		<enumeration>ft/ft</enumeration>
+		<enumeration>ft/in</enumeration>
+		<enumeration>ft/m</enumeration>
+		<enumeration>ft/mi</enumeration>
+		<enumeration>km/cm</enumeration>
+		<enumeration>m/30m</enumeration>
+		<enumeration>m/cm</enumeration>
+		<enumeration>m/km</enumeration>
+		<enumeration>m/m</enumeration>
+		<enumeration>mi/in</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="lengthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m</enumeration>
+		<enumeration>angstrom</enumeration>
+		<enumeration>chBnA</enumeration>
+		<enumeration>chBnB</enumeration>
+		<enumeration>chCla</enumeration>
+		<enumeration>chSe</enumeration>
+		<enumeration>chUS</enumeration>
+		<enumeration>cm</enumeration>
+		<enumeration>dm</enumeration>
+		<enumeration>fathom</enumeration>
+		<enumeration>fm</enumeration>
+		<enumeration>ft</enumeration>
+		<enumeration>ftBnA</enumeration>
+		<enumeration>ftBnB</enumeration>
+		<enumeration>ftBr(65)</enumeration>
+		<enumeration>ftCla</enumeration>
+		<enumeration>ftGC</enumeration>
+		<enumeration>ftInd</enumeration>
+		<enumeration>ftInd(37)</enumeration>
+		<enumeration>ftInd(62)</enumeration>
+		<enumeration>ftInd(75)</enumeration>
+		<enumeration>ftMA</enumeration>
+		<enumeration>ftSe</enumeration>
+		<enumeration>ftUS</enumeration>
+		<enumeration>in</enumeration>
+		<enumeration>in/10</enumeration>
+		<enumeration>in/16</enumeration>
+		<enumeration>in/32</enumeration>
+		<enumeration>in/64</enumeration>
+		<enumeration>inUS</enumeration>
+		<enumeration>km</enumeration>
+		<enumeration>lkBnA</enumeration>
+		<enumeration>lkBnB</enumeration>
+		<enumeration>lkCla</enumeration>
+		<enumeration>lkSe</enumeration>
+		<enumeration>lkUS</enumeration>
+		<enumeration>mGer</enumeration>
+		<enumeration>mi</enumeration>
+		<enumeration>mil</enumeration>
+		<enumeration>miUS</enumeration>
+		<enumeration>mm</enumeration>
+		<enumeration>Mm</enumeration>
+		<enumeration>nautmi</enumeration>
+		<enumeration>nm</enumeration>
+		<enumeration>pm</enumeration>
+		<enumeration>um</enumeration>
+		<enumeration>yd</enumeration>
+		<enumeration>ydBnA</enumeration>
+		<enumeration>ydBnB</enumeration>
+		<enumeration>ydCla</enumeration>
+		<enumeration>ydIm</enumeration>
+		<enumeration>ydInd</enumeration>
+		<enumeration>ydInd(37)</enumeration>
+		<enumeration>ydInd(62)</enumeration>
+		<enumeration>ydInd(75)</enumeration>
+		<enumeration>ydSe</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="magneticFieldStrengthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>A/m</enumeration>
+		<enumeration>A/mm</enumeration>
+		<enumeration>gamma</enumeration>
+		<enumeration>Oe</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="magneticInductionUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>T</enumeration>
+		<enumeration>gauss</enumeration>
+		<enumeration>mT</enumeration>
+		<enumeration>mgauss</enumeration>
+		<enumeration>nT</enumeration>
+		<enumeration>uT</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="massConcentrationUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>Euc</enumeration>
+		<enumeration>%</enumeration>
+		<enumeration>g/kg</enumeration>
+		<enumeration>kg/kg</enumeration>
+		<enumeration>kg/sack94</enumeration>
+		<enumeration>mg/kg</enumeration>
+		<enumeration>permil</enumeration>
+		<enumeration>ppdk</enumeration>
+		<enumeration>ppk</enumeration>
+		<enumeration>ppm</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="massPerLengthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>kg/m</enumeration>
+		<enumeration>klbm/in</enumeration>
+		<enumeration>lbm/ft</enumeration>
+		<enumeration>Mg/in</enumeration>
+		<enumeration>kg.m/cm2</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="massUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>kg</enumeration>
+		<enumeration>ag</enumeration>
+		<enumeration>ct</enumeration>
+		<enumeration>cwtUK</enumeration>
+		<enumeration>cwtUS</enumeration>
+		<enumeration>g</enumeration>
+		<enumeration>grain</enumeration>
+		<enumeration>klbm</enumeration>
+		<enumeration>lbm</enumeration>
+		<enumeration>Mg</enumeration>
+		<enumeration>mg</enumeration>
+		<enumeration>oz(av)</enumeration>
+		<enumeration>oz(troy)</enumeration>
+		<enumeration>ozm</enumeration>
+		<enumeration>sack94</enumeration>
+		<enumeration>t</enumeration>
+		<enumeration>tonUK</enumeration>
+		<enumeration>tonUS</enumeration>
+		<enumeration>ug</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="momentOfForceUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>J</enumeration>
+		<enumeration>dN.m</enumeration>
+		<enumeration>daN.m</enumeration>
+		<enumeration>ft.lbf</enumeration>
+		<enumeration>kft.lbf</enumeration>
+		<enumeration>kgf.m</enumeration>
+		<enumeration>kN.m</enumeration>
+		<enumeration>lbf.ft</enumeration>
+		<enumeration>lbf.in</enumeration>
+		<enumeration>lbm.ft2/s2</enumeration>
+		<enumeration>N.m</enumeration>
+		<enumeration>pdl.ft</enumeration>
+		<enumeration>tonfUS.ft</enumeration>
+		<enumeration>tonfUS.mi</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="perLengthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>1/m</enumeration>
+		<enumeration>1/angstrom</enumeration>
+		<enumeration>1/cm</enumeration>
+		<enumeration>1/ft</enumeration>
+		<enumeration>1/in</enumeration>
+		<enumeration>1/mi</enumeration>
+		<enumeration>1/mm</enumeration>
+		<enumeration>1/nm</enumeration>
+		<enumeration>1/yd</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="planeAngleUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>rad</enumeration>
+		<enumeration>c</enumeration>
+		<enumeration>ccgr</enumeration>
+		<enumeration>cgr</enumeration>
+		<enumeration>dega</enumeration>
+		<enumeration>gon</enumeration>
+		<enumeration>gr</enumeration>
+		<enumeration>Grad</enumeration>
+		<enumeration>krad</enumeration>
+		<enumeration>mila</enumeration>
+		<enumeration>mina</enumeration>
+		<enumeration>mrad</enumeration>
+		<enumeration>Mrad</enumeration>
+		<enumeration>mseca</enumeration>
+		<enumeration>seca</enumeration>
+		<enumeration>urad</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="powerUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>W</enumeration>
+		<enumeration>ch</enumeration>
+		<enumeration>CV</enumeration>
+		<enumeration>ehp</enumeration>
+		<enumeration>GW</enumeration>
+		<enumeration>hhp</enumeration>
+		<enumeration>hp</enumeration>
+		<enumeration>kcal/h</enumeration>
+		<enumeration>kW</enumeration>
+		<enumeration>MJ/a</enumeration>
+		<enumeration>MW</enumeration>
+		<enumeration>mW</enumeration>
+		<enumeration>nW</enumeration>
+		<enumeration>ton of refrig</enumeration>
+		<enumeration>TW</enumeration>
+		<enumeration>uW</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="pressureUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>Pa</enumeration>
+		<enumeration>at</enumeration>
+		<enumeration>atm</enumeration>
+		<enumeration>bar</enumeration>
+		<enumeration>cmH2O(4degC)</enumeration>
+		<enumeration>dyne/cm2</enumeration>
+		<enumeration>GPa</enumeration>
+		<enumeration>hbar</enumeration>
+		<enumeration>inH2O(39.2F)</enumeration>
+		<enumeration>inH2O(60F)</enumeration>
+		<enumeration>inHg(32F)</enumeration>
+		<enumeration>inHg(60F)</enumeration>
+		<enumeration>kgf/cm2</enumeration>
+		<enumeration>kgf/mm2</enumeration>
+		<enumeration>kN/m2</enumeration>
+		<enumeration>kPa</enumeration>
+		<enumeration>kpsi</enumeration>
+		<enumeration>lbf/ft2</enumeration>
+		<enumeration>lbf/100ft2</enumeration>
+		<enumeration>lbf/in2</enumeration>
+		<enumeration>mbar</enumeration>
+		<enumeration>mmHg(0C)</enumeration>
+		<enumeration>mPa</enumeration>
+		<enumeration>MPa</enumeration>
+		<enumeration>Mpsi</enumeration>
+		<enumeration>N/m2</enumeration>
+		<enumeration>N/mm2</enumeration>
+		<enumeration>Pa(g)</enumeration>
+		<enumeration>pPa</enumeration>
+		<enumeration>psi</enumeration>
+		<enumeration>psia</enumeration>
+		<enumeration>psig</enumeration>
+		<enumeration>tonfUS/ft2</enumeration>
+		<enumeration>tonfUS/in2</enumeration>
+		<enumeration>torr</enumeration>
+		<enumeration>ubar</enumeration>
+		<enumeration>umHg(0C)</enumeration>
+		<enumeration>uPa</enumeration>
+		<enumeration>upsi</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="relativePowerUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>%</enumeration>
+		<enumeration>Btu/bhp.hr</enumeration>
+		<enumeration>W/kW</enumeration>
+		<enumeration>W/W</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="specificVolumeUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m3/kg</enumeration>
+		<enumeration>bbl/tonUK</enumeration>
+		<enumeration>bbl/tonUS</enumeration>
+		<enumeration>cm3/g</enumeration>
+		<enumeration>dm3/kg</enumeration>
+		<enumeration>dm3/t</enumeration>
+		<enumeration>ft3/kg</enumeration>
+		<enumeration>ft3/lbm</enumeration>
+		<enumeration>ft3/sack94</enumeration>
+		<enumeration>galUS/sack94</enumeration>
+		<enumeration>galUK/lbm</enumeration>
+		<enumeration>galUS/lbm</enumeration>
+		<enumeration>galUS/tonUK</enumeration>
+		<enumeration>galUS/tonUS</enumeration>
+		<enumeration>L/100kg</enumeration>
+		<enumeration>L/kg</enumeration>
+		<enumeration>L/t</enumeration>
+		<enumeration>L/tonUK</enumeration>
+		<enumeration>m3/g</enumeration>
+		<enumeration>m3/t</enumeration>
+		<enumeration>m3/tonUK</enumeration>
+		<enumeration>m3/tonUS</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="thermodynamicTemperatureUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>K</enumeration>
+		<enumeration>degC</enumeration>
+		<enumeration>degF</enumeration>
+		<enumeration>degR</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="timeUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>s</enumeration>
+		<enumeration>a</enumeration>
+		<enumeration>cs</enumeration>
+		<enumeration>d</enumeration>
+		<enumeration>Ga</enumeration>
+		<enumeration>h</enumeration>
+		<enumeration>100s</enumeration>
+		<enumeration>Ma</enumeration>
+		<enumeration>min</enumeration>
+		<enumeration>ms</enumeration>
+		<enumeration>ms/2</enumeration>
+		<enumeration>ns</enumeration>
+		<enumeration>ps</enumeration>
+		<enumeration>us</enumeration>
+		<enumeration>wk</enumeration>
+		<enumeration>100ka</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="velocityUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m/s</enumeration>
+		<enumeration>cm/a</enumeration>
+		<enumeration>cm/s</enumeration>
+		<enumeration>dm/s</enumeration>
+		<enumeration>ft/d</enumeration>
+		<enumeration>ft/h</enumeration>
+		<enumeration>ft/min</enumeration>
+		<enumeration>ft/ms</enumeration>
+		<enumeration>ft/s</enumeration>
+		<enumeration>ft/us</enumeration>
+		<enumeration>in/a</enumeration>
+		<enumeration>in/min</enumeration>
+		<enumeration>in/s</enumeration>
+		<enumeration>kft/h</enumeration>
+		<enumeration>kft/s</enumeration>
+		<enumeration>km/h</enumeration>
+		<enumeration>km/s</enumeration>
+		<enumeration>knot</enumeration>
+		<enumeration>m/d</enumeration>
+		<enumeration>m/h</enumeration>
+		<enumeration>m/min</enumeration>
+		<enumeration>m/ms</enumeration>
+		<enumeration>mi/h</enumeration>
+		<enumeration>mil/yr</enumeration>
+		<enumeration>mm/a</enumeration>
+		<enumeration>mm/s</enumeration>
+		<enumeration>nm/s</enumeration>
+		<enumeration>um/s</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="volumeFlowRateUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m3/s</enumeration>
+		<enumeration>bbl/d</enumeration>
+		<enumeration>bbl/hr</enumeration>
+		<enumeration>bbl/min</enumeration>
+		<enumeration>cm3/30min</enumeration>
+		<enumeration>cm3/h</enumeration>
+		<enumeration>cm3/min</enumeration>
+		<enumeration>cm3/s</enumeration>
+		<enumeration>dm3/s</enumeration>
+		<enumeration>ft3/d</enumeration>
+		<enumeration>ft3/h</enumeration>
+		<enumeration>ft3/min</enumeration>
+		<enumeration>ft3/s</enumeration>
+		<enumeration>galUK/d</enumeration>
+		<enumeration>galUK/hr</enumeration>
+		<enumeration>galUK/min</enumeration>
+		<enumeration>galUS/d</enumeration>
+		<enumeration>galUS/hr</enumeration>
+		<enumeration>galUS/min</enumeration>
+		<enumeration>kbbl/d</enumeration>
+		<enumeration>1000ft3/d</enumeration>
+		<enumeration>1000m3/d</enumeration>
+		<enumeration>1000m3/h</enumeration>
+		<enumeration>L/h</enumeration>
+		<enumeration>L/min</enumeration>
+		<enumeration>L/s</enumeration>
+		<enumeration>m3/d</enumeration>
+		<enumeration>m3/h</enumeration>
+		<enumeration>m3/min</enumeration>
+		<enumeration>Mbbl/d</enumeration>
+		<enumeration>M(ft3)/d</enumeration>
+		<enumeration>M(m3)/d</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="volumePerVolumeUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>Euc</enumeration>
+		<enumeration>%</enumeration>
+		<enumeration>permil</enumeration>
+		<enumeration>ppdk</enumeration>
+		<enumeration>ppk</enumeration>
+		<enumeration>ppm</enumeration>
+		<enumeration>bbl/acre.ft</enumeration>
+		<enumeration>bbl/bbl</enumeration>
+		<enumeration>bbl/ft3</enumeration>
+		<enumeration>bbl/100bbl</enumeration>
+		<enumeration>bbl/k(ft3)</enumeration>
+		<enumeration>bbl/M(ft3)</enumeration>
+		<enumeration>cm3/cm3</enumeration>
+		<enumeration>cm3/m3</enumeration>
+		<enumeration>dm3/m3</enumeration>
+		<enumeration>ft3/bbl</enumeration>
+		<enumeration>ft3/ft3</enumeration>
+		<enumeration>galUS/kgalUS</enumeration>
+		<enumeration>galUK/kgalUK</enumeration>
+		<enumeration>galUK/ft3</enumeration>
+		<enumeration>galUK/Mbbl</enumeration>
+		<enumeration>galUS/bbl</enumeration>
+		<enumeration>galUS/10bbl</enumeration>
+		<enumeration>galUS/ft3</enumeration>
+		<enumeration>galUS/Mbbl</enumeration>
+		<enumeration>1000ft3/bbl</enumeration>
+		<enumeration>ksm3/sm3</enumeration>
+		<enumeration>L/10bbl</enumeration>
+		<enumeration>L/m3</enumeration>
+		<enumeration>m3/ha.m</enumeration>
+		<enumeration>m3/m3</enumeration>
+		<enumeration>M(ft3)/acre.ft</enumeration>
+		<enumeration>mL/galUK</enumeration>
+		<enumeration>mL/galUS</enumeration>
+		<enumeration>mL/mL</enumeration>
+		<enumeration>MMbbl/acre.ft</enumeration>
+		<enumeration>MMscf60/stb60</enumeration>
+		<enumeration>Mscf60/stb60</enumeration>
+		<enumeration>ptUK/Mbbl</enumeration>
+		<enumeration>ptUS/10bbl</enumeration>
+		<enumeration>pu</enumeration>
+		<enumeration>scm15/stb60</enumeration>
+		<enumeration>sm3/ksm3</enumeration>
+		<enumeration>sm3/sm3</enumeration>
+		<enumeration>stb60/MMscf60</enumeration>
+		<enumeration>stb60/MMscm15</enumeration>
+		<enumeration>stb60/Mscf60</enumeration>
+		<enumeration>stb60/Mscm15</enumeration>
+		<enumeration>stb60/scm15</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="volumeUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m3</enumeration>
+		<enumeration>acre.ft</enumeration>
+		<enumeration>bbl</enumeration>
+		<enumeration>bcf</enumeration>
+		<enumeration>cm3</enumeration>
+		<enumeration>dm3</enumeration>
+		<enumeration>flozUK</enumeration>
+		<enumeration>flozUS</enumeration>
+		<enumeration>ft3</enumeration>
+		<enumeration>galUK</enumeration>
+		<enumeration>galUS</enumeration>
+		<enumeration>ha.m</enumeration>
+		<enumeration>hL</enumeration>
+		<enumeration>in3</enumeration>
+		<enumeration>1000ft3</enumeration>
+		<enumeration>km3</enumeration>
+		<enumeration>L</enumeration>
+		<enumeration>Mbbl</enumeration>
+		<enumeration>Mcf</enumeration>
+		<enumeration>M(ft3)</enumeration>
+		<enumeration>mi3</enumeration>
+		<enumeration>mL</enumeration>
+		<enumeration>M(m3)</enumeration>
+		<enumeration>mm3</enumeration>
+		<enumeration>MMbbl</enumeration>
+		<enumeration>ptUK</enumeration>
+		<enumeration>ptUS</enumeration>
+		<enumeration>qtUK</enumeration>
+		<enumeration>qtUS</enumeration>
+		<enumeration>tcf</enumeration>
+		<enumeration>um2.m</enumeration>
+		<enumeration>yd3</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ActivityClassType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>planned</enumeration>
+		<enumeration>unplanned</enumeration>
+		<enumeration>downtime</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ActivityCode" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ArrayElementDataType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>boolean</enumeration>
+		<enumeration>integer 8 bit</enumeration>
+		<enumeration>integer 16 bit</enumeration>
+		<enumeration>integer 32 bit</enumeration>
+		<enumeration>integer 64 bit</enumeration>
+		<enumeration>IEEE float 32 bit</enumeration>
+		<enumeration>IEEE float 64 bit</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="AziRef" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>magnetic north</enumeration>
+		<enumeration>grid north</enumeration>
+		<enumeration>true north</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BearingType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>oil seal</enumeration>
+		<enumeration>mud lube</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BhaStatus" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>final</enumeration>
+		<enumeration>progress</enumeration>
+		<enumeration>plan</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BitDullCode" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>BC</enumeration>
+		<enumeration>BT</enumeration>
+		<enumeration>BU</enumeration>
+		<enumeration>CC</enumeration>
+		<enumeration>CD</enumeration>
+		<enumeration>CI</enumeration>
+		<enumeration>CR</enumeration>
+		<enumeration>CT</enumeration>
+		<enumeration>ER</enumeration>
+		<enumeration>FC</enumeration>
+		<enumeration>HC</enumeration>
+		<enumeration>JD</enumeration>
+		<enumeration>LC</enumeration>
+		<enumeration>LN</enumeration>
+		<enumeration>LT</enumeration>
+		<enumeration>NO</enumeration>
+		<enumeration>OC</enumeration>
+		<enumeration>PB</enumeration>
+		<enumeration>PN</enumeration>
+		<enumeration>RG</enumeration>
+		<enumeration>RO</enumeration>
+		<enumeration>SD</enumeration>
+		<enumeration>SS</enumeration>
+		<enumeration>TR</enumeration>
+		<enumeration>WO</enumeration>
+		<enumeration>WT</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BitReasonPulled" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>BHA</enumeration>
+		<enumeration>CM</enumeration>
+		<enumeration>CP</enumeration>
+		<enumeration>DMF</enumeration>
+		<enumeration>DP</enumeration>
+		<enumeration>DST</enumeration>
+		<enumeration>DTF</enumeration>
+		<enumeration>FM</enumeration>
+		<enumeration>HP</enumeration>
+		<enumeration>HR</enumeration>
+		<enumeration>LOG</enumeration>
+		<enumeration>PP</enumeration>
+		<enumeration>PR</enumeration>
+		<enumeration>RIG</enumeration>
+		<enumeration>TD</enumeration>
+		<enumeration>TQ</enumeration>
+		<enumeration>TW</enumeration>
+		<enumeration>WC</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BitType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>diamond</enumeration>
+		<enumeration>diamond core</enumeration>
+		<enumeration>insert roller cone</enumeration>
+		<enumeration>PDC</enumeration>
+		<enumeration>PDC core</enumeration>
+		<enumeration>roller cone</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BladeShapeType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>dynamic</enumeration>
+		<enumeration>melon</enumeration>
+		<enumeration>spiral</enumeration>
+		<enumeration>straight</enumeration>
+		<enumeration>variable</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BladeType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>clamp-on</enumeration>
+		<enumeration>integral</enumeration>
+		<enumeration>sleeve</enumeration>
+		<enumeration>welded</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BopType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>annular preventer</enumeration>
+		<enumeration>shear ram</enumeration>
+		<enumeration>blind ram</enumeration>
+		<enumeration>pipe ram</enumeration>
+		<enumeration>drilling spool</enumeration>
+		<enumeration>flexible joint</enumeration>
+		<enumeration>connector</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="BoxPinConfig" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>bottom box, top box</enumeration>
+		<enumeration>bottom box, top pin</enumeration>
+		<enumeration>bottom pin top box</enumeration>
+		<enumeration>bottom pin</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="CementJobType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>primary</enumeration>
+		<enumeration>plug</enumeration>
+		<enumeration>squeeze</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ConnectionPosition" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>both</enumeration>
+		<enumeration>bottom</enumeration>
+		<enumeration>top</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="DeflectionMethod" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>point bit</enumeration>
+		<enumeration>push bit</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="DerrickType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>double</enumeration>
+		<enumeration>quadruple</enumeration>
+		<enumeration>slant</enumeration>
+		<enumeration>triple</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="DrawWorksType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>mechanical</enumeration>
+		<enumeration>standard electric</enumeration>
+		<enumeration>diesel electric</enumeration>
+		<enumeration>ram rig</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="DriveType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>coiled tubing</enumeration>
+		<enumeration>rotary kelly drive</enumeration>
+		<enumeration>top drive</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ElevCodeEnum" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>CF</enumeration>
+		<enumeration>CV</enumeration>
+		<enumeration>DF</enumeration>
+		<enumeration>GL</enumeration>
+		<enumeration>KB</enumeration>
+		<enumeration>RB</enumeration>
+		<enumeration>RT</enumeration>
+		<enumeration>SF</enumeration>
+		<enumeration>LAT</enumeration>
+		<enumeration>SL</enumeration>
+		<enumeration>MHHW</enumeration>
+		<enumeration>MHW</enumeration>
+		<enumeration>MLLW</enumeration>
+		<enumeration>MLW</enumeration>
+		<enumeration>MTL</enumeration>
+		<enumeration>KO</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="Ellipsoid" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>AGD66</enumeration>
+		<enumeration>AIRY_MOD</enumeration>
+		<enumeration>AIRY30</enumeration>
+		<enumeration>AIRY49</enumeration>
+		<enumeration>AUST_NAT</enumeration>
+		<enumeration>BESL-DHD</enumeration>
+		<enumeration>BESL-NGL</enumeration>
+		<enumeration>BESL-RT9</enumeration>
+		<enumeration>BESS41</enumeration>
+		<enumeration>BESSNAM</enumeration>
+		<enumeration>BOGOTA</enumeration>
+		<enumeration>CL58</enumeration>
+		<enumeration>CL58-1</enumeration>
+		<enumeration>CL66</enumeration>
+		<enumeration>CL66-M</enumeration>
+		<enumeration>CL80</enumeration>
+		<enumeration>CL80-A</enumeration>
+		<enumeration>CL80-B</enumeration>
+		<enumeration>CL80-I</enumeration>
+		<enumeration>CL80-J</enumeration>
+		<enumeration>CL80-M</enumeration>
+		<enumeration>CL80-P</enumeration>
+		<enumeration>CMPOINCH</enumeration>
+		<enumeration>DAN</enumeration>
+		<enumeration>DELA</enumeration>
+		<enumeration>ED50</enumeration>
+		<enumeration>EGYPT07</enumeration>
+		<enumeration>EVER</enumeration>
+		<enumeration>EVER48</enumeration>
+		<enumeration>EVER56</enumeration>
+		<enumeration>EVER69</enumeration>
+		<enumeration>EVER-BR</enumeration>
+		<enumeration>EVERMOD</enumeration>
+		<enumeration>EVER-P</enumeration>
+		<enumeration>EVER-TM</enumeration>
+		<enumeration>EVTM</enumeration>
+		<enumeration>FISC60</enumeration>
+		<enumeration>FISC60MOD</enumeration>
+		<enumeration>FISC68</enumeration>
+		<enumeration>FISCMOD</enumeration>
+		<enumeration>GDA94</enumeration>
+		<enumeration>GRS67</enumeration>
+		<enumeration>GRS80</enumeration>
+		<enumeration>HAY09</enumeration>
+		<enumeration>HEIS</enumeration>
+		<enumeration>HEL06</enumeration>
+		<enumeration>HEL07</enumeration>
+		<enumeration>HOUG</enumeration>
+		<enumeration>IAG-75</enumeration>
+		<enumeration>INDIAN75</enumeration>
+		<enumeration>INDO-74</enumeration>
+		<enumeration>INT24</enumeration>
+		<enumeration>IUGG67</enumeration>
+		<enumeration>IUGG75</enumeration>
+		<enumeration>JEFF48</enumeration>
+		<enumeration>KAU63</enumeration>
+		<enumeration>KRSV</enumeration>
+		<enumeration>MERIT83</enumeration>
+		<enumeration>NAD27</enumeration>
+		<enumeration>NAHRAN</enumeration>
+		<enumeration>NEWINT67</enumeration>
+		<enumeration>NWL-10D</enumeration>
+		<enumeration>NWL-9D</enumeration>
+		<enumeration>OSGB36</enumeration>
+		<enumeration>OSU86F</enumeration>
+		<enumeration>OSU91A</enumeration>
+		<enumeration>PLESSIS-1817</enumeration>
+		<enumeration>PSAD56</enumeration>
+		<enumeration>PTNOIRE</enumeration>
+		<enumeration>SA69</enumeration>
+		<enumeration>SPHR</enumeration>
+		<enumeration>STRU</enumeration>
+		<enumeration>WALB</enumeration>
+		<enumeration>WAR24</enumeration>
+		<enumeration>WGS60</enumeration>
+		<enumeration>WGS66</enumeration>
+		<enumeration>WGS72</enumeration>
+		<enumeration>WGS84</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="FiberMode" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>singlemode</enumeration>
+		<enumeration>multimode</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="GasPeakType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>circulating background gas</enumeration>
+		<enumeration>connection gas</enumeration>
+		<enumeration>drilling background gas</enumeration>
+		<enumeration>drilling gas peak</enumeration>
+		<enumeration>flow check gas</enumeration>
+		<enumeration>no readings</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>shut down gas</enumeration>
+		<enumeration>trip gas</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="GeodeticDatum" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>ADND</enumeration>
+		<enumeration>ARC50</enumeration>
+		<enumeration>AUSG</enumeration>
+		<enumeration>CAA</enumeration>
+		<enumeration>CHAS</enumeration>
+		<enumeration>CORAL</enumeration>
+		<enumeration>ED50</enumeration>
+		<enumeration>ED87</enumeration>
+		<enumeration>ERIN65</enumeration>
+		<enumeration>GD49</enumeration>
+		<enumeration>GHANA</enumeration>
+		<enumeration>GUAM63</enumeration>
+		<enumeration>HJRS55</enumeration>
+		<enumeration>HTS</enumeration>
+		<enumeration>INCH</enumeration>
+		<enumeration>INDIA1</enumeration>
+		<enumeration>INDIA2</enumeration>
+		<enumeration>INDNS74</enumeration>
+		<enumeration>LIB64</enumeration>
+		<enumeration>LUZON</enumeration>
+		<enumeration>MRCH</enumeration>
+		<enumeration>NAD27</enumeration>
+		<enumeration>NAD83</enumeration>
+		<enumeration>NGRA</enumeration>
+		<enumeration>None</enumeration>
+		<enumeration>NPRM</enumeration>
+		<enumeration>OSGB36</enumeration>
+		<enumeration>POTS1</enumeration>
+		<enumeration>PULK1</enumeration>
+		<enumeration>PULK2</enumeration>
+		<enumeration>QRNQ</enumeration>
+		<enumeration>SA56</enumeration>
+		<enumeration>SRL60</enumeration>
+		<enumeration>TNRV25</enumeration>
+		<enumeration>TOKYO</enumeration>
+		<enumeration>UserDefined</enumeration>
+		<enumeration>VROL</enumeration>
+		<enumeration>WGS72</enumeration>
+		<enumeration>WGS84</enumeration>
+		<enumeration>YACR</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="Hemispheres" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>northern</enumeration>
+		<enumeration>southern</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="HoleCasingType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>blow out preventer</enumeration>
+		<enumeration>casing</enumeration>
+		<enumeration>conductor</enumeration>
+		<enumeration>curved conductor</enumeration>
+		<enumeration>liner</enumeration>
+		<enumeration>open hole</enumeration>
+		<enumeration>riser</enumeration>
+		<enumeration>tubing</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="HoleOpenerType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>under-reamer</enumeration>
+		<enumeration>fixed blade</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="InstalledFiberPoint" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>splice</enumeration>
+		<enumeration>connector</enumeration>
+		<enumeration>end of fiber</enumeration>
+		<enumeration>base of fiber</enumeration>
+		<enumeration>turn around point</enumeration>
+		<enumeration>start of fiber</enumeration>
+		<enumeration>oven entry point</enumeration>
+		<enumeration>oven exit point</enumeration>
+		<enumeration>downhole gauge</enumeration>
+		<enumeration>DTS laser head</enumeration>
+		<enumeration>DTS reference oven</enumeration>
+		<enumeration>splice box</enumeration>
+		<enumeration>wellhead junction box</enumeration>
+		<enumeration>base tubing hanger flange</enumeration>
+		<enumeration>PBR wet connect</enumeration>
+		<enumeration>top ESP pump</enumeration>
+		<enumeration>base ESP pump</enumeration>
+		<enumeration>wellhead temperature gauge</enumeration>
+		<enumeration>top completion zone</enumeration>
+		<enumeration>base completion zone</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="IntervalMethod" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>average</enumeration>
+		<enumeration>maximum</enumeration>
+		<enumeration>minimum</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>spot sample</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="IntervalType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>time</enumeration>
+		<enumeration>depth</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ItemState" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>actual</enumeration>
+		<enumeration>model</enumeration>
+		<enumeration>plan</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="JarAction" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>up</enumeration>
+		<enumeration>down</enumeration>
+		<enumeration>both</enumeration>
+		<enumeration>vibrating</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="JarType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>mechanical</enumeration>
+		<enumeration>hydraulic</enumeration>
+		<enumeration>hydro mechanical</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="LithologySource" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>interpreted</enumeration>
+		<enumeration>core</enumeration>
+		<enumeration>cuttings</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="LithologyType" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="LogDataType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>date time</enumeration>
+		<enumeration>double</enumeration>
+		<enumeration>long</enumeration>
+		<enumeration>string</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="LogIndexDirection" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>decreasing</enumeration>
+		<enumeration>increasing</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="LogIndexType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>date time</enumeration>
+		<enumeration>elapsed time</enumeration>
+		<enumeration>length</enumeration>
+		<enumeration>measured depth</enumeration>
+		<enumeration>vertical depth</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="LogTraceOrigin" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>realtime</enumeration>
+		<enumeration>modeled</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="LogTraceState" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>depth adjusted</enumeration>
+		<enumeration>edited</enumeration>
+		<enumeration>joined</enumeration>
+		<enumeration>processed</enumeration>
+		<enumeration>raw</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="MaterialType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>aluminum</enumeration>
+		<enumeration>beryllium copper</enumeration>
+		<enumeration>chrome alloy</enumeration>
+		<enumeration>composite</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>non-magnetic steel</enumeration>
+		<enumeration>plastic</enumeration>
+		<enumeration>steel</enumeration>
+		<enumeration>steel alloy</enumeration>
+		<enumeration>titanium</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="MeasurementType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>acceleration</enumeration>
+		<enumeration>acoustic caliper</enumeration>
+		<enumeration>acoustic casing collar locator</enumeration>
+		<enumeration>acoustic impedance</enumeration>
+		<enumeration>acoustic porosity</enumeration>
+		<enumeration>acoustic velocity</enumeration>
+		<enumeration>acoustic wave matrix travel time</enumeration>
+		<enumeration>acoustic wave travel time</enumeration>
+		<enumeration>amplitude</enumeration>
+		<enumeration>amplitude of acoustic wave</enumeration>
+		<enumeration>amplitude of E-M wave</enumeration>
+		<enumeration>amplitude ratio</enumeration>
+		<enumeration>area</enumeration>
+		<enumeration>attenuation</enumeration>
+		<enumeration>attenuation of acoustic wave</enumeration>
+		<enumeration>attenuation of E-M wave</enumeration>
+		<enumeration>auxiliary</enumeration>
+		<enumeration>average porosity</enumeration>
+		<enumeration>azimuth</enumeration>
+		<enumeration>barite mud correction</enumeration>
+		<enumeration>bed thickness correction</enumeration>
+		<enumeration>bit size</enumeration>
+		<enumeration>blocked</enumeration>
+		<enumeration>borehole environment correction</enumeration>
+		<enumeration>borehole fluid composition correction</enumeration>
+		<enumeration>borehole fluid correction</enumeration>
+		<enumeration>borehole size correction</enumeration>
+		<enumeration>bromide mud correction</enumeration>
+		<enumeration>bulk compressibility</enumeration>
+		<enumeration>bulk density</enumeration>
+		<enumeration>bulk volume</enumeration>
+		<enumeration>bulk volume gas</enumeration>
+		<enumeration>bulk volume hydrocarbon</enumeration>
+		<enumeration>bulk volume oil</enumeration>
+		<enumeration>bulk volume water</enumeration>
+		<enumeration>C/O ratio</enumeration>
+		<enumeration>caliper</enumeration>
+		<enumeration>cased hole correction</enumeration>
+		<enumeration>casing collar locator</enumeration>
+		<enumeration>casing correction</enumeration>
+		<enumeration>casing diameter correction</enumeration>
+		<enumeration>casing inspection</enumeration>
+		<enumeration>casing thickness correction</enumeration>
+		<enumeration>casing weight correction</enumeration>
+		<enumeration>cement correction</enumeration>
+		<enumeration>cement density correction</enumeration>
+		<enumeration>cement evaluation</enumeration>
+		<enumeration>cement thickness correction</enumeration>
+		<enumeration>cement type correction</enumeration>
+		<enumeration>CH density porosity</enumeration>
+		<enumeration>CH dolomite density porosity</enumeration>
+		<enumeration>CH dolomite neutron porosity</enumeration>
+		<enumeration>CH limestone density porosity</enumeration>
+		<enumeration>CH limestone neutron porosity</enumeration>
+		<enumeration>CH neutron porosity</enumeration>
+		<enumeration>CH sandstone density porosity</enumeration>
+		<enumeration>CH sandstone neutron porosity</enumeration>
+		<enumeration>compressional wave dolomite porosity</enumeration>
+		<enumeration>compressional wave limestone porosity</enumeration>
+		<enumeration>compressional wave matrix travel time</enumeration>
+		<enumeration>compressional wave sandstone porosity</enumeration>
+		<enumeration>compressional wave travel time</enumeration>
+		<enumeration>conductivity</enumeration>
+		<enumeration>conductivity from attenuation</enumeration>
+		<enumeration>conductivity from phase shift</enumeration>
+		<enumeration>connate water conductivity</enumeration>
+		<enumeration>connate water resistivity</enumeration>
+		<enumeration>conventional core porosity</enumeration>
+		<enumeration>core matrix density</enumeration>
+		<enumeration>core permeability</enumeration>
+		<enumeration>core porosity</enumeration>
+		<enumeration>corrected</enumeration>
+		<enumeration>count rate</enumeration>
+		<enumeration>count rate ratio</enumeration>
+		<enumeration>cross plot porosity</enumeration>
+		<enumeration>decay time</enumeration>
+		<enumeration>deep conductivity</enumeration>
+		<enumeration>deep induction conductivity</enumeration>
+		<enumeration>deep induction resistivity</enumeration>
+		<enumeration>deep laterolog conductivity</enumeration>
+		<enumeration>deep laterolog resistivity</enumeration>
+		<enumeration>deep resistivity</enumeration>
+		<enumeration>density</enumeration>
+		<enumeration>density porosity</enumeration>
+		<enumeration>depth</enumeration>
+		<enumeration>depth adjusted</enumeration>
+		<enumeration>depth derived from velocity</enumeration>
+		<enumeration>deviation</enumeration>
+		<enumeration>dielectric</enumeration>
+		<enumeration>diffusion correction</enumeration>
+		<enumeration>dip</enumeration>
+		<enumeration>dipmeter</enumeration>
+		<enumeration>dipmeter conductivity</enumeration>
+		<enumeration>dipmeter resistivity</enumeration>
+		<enumeration>dolomite acoustic porosity</enumeration>
+		<enumeration>dolomite density porosity</enumeration>
+		<enumeration>dolomite neutron porosity</enumeration>
+		<enumeration>edited</enumeration>
+		<enumeration>effective porosity</enumeration>
+		<enumeration>electric current</enumeration>
+		<enumeration>electric potential</enumeration>
+		<enumeration>electromagnetic wave matrix travel time</enumeration>
+		<enumeration>electromagnetic wave travel time</enumeration>
+		<enumeration>element</enumeration>
+		<enumeration>elemental ratio</enumeration>
+		<enumeration>enhanced</enumeration>
+		<enumeration>filtered</enumeration>
+		<enumeration>flowmeter</enumeration>
+		<enumeration>fluid density</enumeration>
+		<enumeration>fluid velocity</enumeration>
+		<enumeration>fluid viscosity</enumeration>
+		<enumeration>flushed zone conductivity</enumeration>
+		<enumeration>flushed zone resistivity</enumeration>
+		<enumeration>flushed zone saturation</enumeration>
+		<enumeration>force</enumeration>
+		<enumeration>formation density correction</enumeration>
+		<enumeration>formation properties correction</enumeration>
+		<enumeration>formation salinity correction</enumeration>
+		<enumeration>formation saturation correction</enumeration>
+		<enumeration>formation volume factor correction</enumeration>
+		<enumeration>formation water density correction</enumeration>
+		<enumeration>formation water saturation correction</enumeration>
+		<enumeration>free fluid index</enumeration>
+		<enumeration>friction effect correction</enumeration>
+		<enumeration>gamma ray</enumeration>
+		<enumeration>gamma ray minus uranium</enumeration>
+		<enumeration>gas saturation</enumeration>
+		<enumeration>gradiomanometer</enumeration>
+		<enumeration>high frequency conductivity</enumeration>
+		<enumeration>high frequency electromagnetic</enumeration>
+		<enumeration>high frequency electromagnetic porosity</enumeration>
+		<enumeration>high frequency E-M phase shift</enumeration>
+		<enumeration>high frequency resistivity</enumeration>
+		<enumeration>hydrocarbon correction</enumeration>
+		<enumeration>hydrocarbon density correction</enumeration>
+		<enumeration>hydrocarbon gravity correction</enumeration>
+		<enumeration>hydrocarbon saturation</enumeration>
+		<enumeration>hydrocarbon viscosity correction</enumeration>
+		<enumeration>image</enumeration>
+		<enumeration>interpretation variable</enumeration>
+		<enumeration>iron mud correction</enumeration>
+		<enumeration>joined</enumeration>
+		<enumeration>KCl mud correction</enumeration>
+		<enumeration>length</enumeration>
+		<enumeration>limestone acoustic porosity</enumeration>
+		<enumeration>limestone density porosity</enumeration>
+		<enumeration>limestone neutron porosity</enumeration>
+		<enumeration>lithology correction</enumeration>
+		<enumeration>log derived permeability</enumeration>
+		<enumeration>log matrix density</enumeration>
+		<enumeration>magnetic casing collar locator</enumeration>
+		<enumeration>matrix density</enumeration>
+		<enumeration>matrix travel time</enumeration>
+		<enumeration>measured depth</enumeration>
+		<enumeration>mechanical caliper</enumeration>
+		<enumeration>mechanical casing collar locator</enumeration>
+		<enumeration>medium conductivity</enumeration>
+		<enumeration>medium induction conductivity</enumeration>
+		<enumeration>medium induction resistivity</enumeration>
+		<enumeration>medium laterolog conductivity</enumeration>
+		<enumeration>medium laterolog resistivity</enumeration>
+		<enumeration>medium resistivity</enumeration>
+		<enumeration>micro conductivity</enumeration>
+		<enumeration>micro inverse conductivity</enumeration>
+		<enumeration>micro inverse resistivity</enumeration>
+		<enumeration>micro laterolog conductivity</enumeration>
+		<enumeration>micro laterolog resistivity</enumeration>
+		<enumeration>micro normal conductivity</enumeration>
+		<enumeration>micro normal resistivity</enumeration>
+		<enumeration>micro resistivity</enumeration>
+		<enumeration>micro spherically focused conductivity</enumeration>
+		<enumeration>micro spherically focused resistivity</enumeration>
+		<enumeration>mineral</enumeration>
+		<enumeration>mud cake conductivity</enumeration>
+		<enumeration>mud cake correction</enumeration>
+		<enumeration>mud cake density correction</enumeration>
+		<enumeration>mud cake resistivity</enumeration>
+		<enumeration>mud cake resistivity correction</enumeration>
+		<enumeration>mud cake thickness correction</enumeration>
+		<enumeration>mud composition correction</enumeration>
+		<enumeration>mud conductivity</enumeration>
+		<enumeration>mud filtrate conductivity</enumeration>
+		<enumeration>mud filtrate correction</enumeration>
+		<enumeration>mud filtrate density correction</enumeration>
+		<enumeration>mud filtrate resistivity</enumeration>
+		<enumeration>mud filtrate resistivity correction</enumeration>
+		<enumeration>mud filtrate salinity correction</enumeration>
+		<enumeration>mud resistivity</enumeration>
+		<enumeration>mud salinity correction</enumeration>
+		<enumeration>mud viscosity correction</enumeration>
+		<enumeration>mud weight correction</enumeration>
+		<enumeration>neutron die away time</enumeration>
+		<enumeration>neutron porosity</enumeration>
+		<enumeration>nuclear caliper</enumeration>
+		<enumeration>nuclear magnetic decay time</enumeration>
+		<enumeration>nuclear magnetism log permeability</enumeration>
+		<enumeration>nuclear magnetism porosity</enumeration>
+		<enumeration>OH density porosity</enumeration>
+		<enumeration>OH dolomite density porosity</enumeration>
+		<enumeration>OH dolomite neutron porosity</enumeration>
+		<enumeration>OH limestone density porosity</enumeration>
+		<enumeration>OH limestone neutron porosity</enumeration>
+		<enumeration>OH neutron porosity</enumeration>
+		<enumeration>OH sandstone density porosity</enumeration>
+		<enumeration>OH sandstone neutron porosity</enumeration>
+		<enumeration>oil based mud correction</enumeration>
+		<enumeration>oil saturation</enumeration>
+		<enumeration>perforating</enumeration>
+		<enumeration>permeability</enumeration>
+		<enumeration>phase shift</enumeration>
+		<enumeration>photoelectric absorption</enumeration>
+		<enumeration>photoelectric absorption correction</enumeration>
+		<enumeration>physical measurement correction</enumeration>
+		<enumeration>plane angle</enumeration>
+		<enumeration>porosity</enumeration>
+		<enumeration>porosity correction</enumeration>
+		<enumeration>potassium</enumeration>
+		<enumeration>pressure</enumeration>
+		<enumeration>pressure correction</enumeration>
+		<enumeration>processed</enumeration>
+		<enumeration>pulsed neutron porosity</enumeration>
+		<enumeration>quality</enumeration>
+		<enumeration>ratio</enumeration>
+		<enumeration>raw</enumeration>
+		<enumeration>relative bearing</enumeration>
+		<enumeration>resistivity</enumeration>
+		<enumeration>resistivity factor correction</enumeration>
+		<enumeration>resistivity from attenuation</enumeration>
+		<enumeration>resistivity from phase shift</enumeration>
+		<enumeration>resistivity phase shift</enumeration>
+		<enumeration>resistivity ratio</enumeration>
+		<enumeration>salinity</enumeration>
+		<enumeration>sampling</enumeration>
+		<enumeration>sandstone acoustic porosity</enumeration>
+		<enumeration>sandstone density porosity</enumeration>
+		<enumeration>sandstone neutron porosity</enumeration>
+		<enumeration>saturation</enumeration>
+		<enumeration>shale volume</enumeration>
+		<enumeration>shallow conductivity</enumeration>
+		<enumeration>shallow induction conductivity</enumeration>
+		<enumeration>shallow induction resistivity</enumeration>
+		<enumeration>shallow laterolog conductivity</enumeration>
+		<enumeration>shallow laterolog resistivity</enumeration>
+		<enumeration>shallow resistivity</enumeration>
+		<enumeration>shear wave dolomite porosity</enumeration>
+		<enumeration>shear wave limestone porosity</enumeration>
+		<enumeration>shear wave matrix travel time</enumeration>
+		<enumeration>shear wave sandstone porosity</enumeration>
+		<enumeration>shear wave travel time</enumeration>
+		<enumeration>shifted</enumeration>
+		<enumeration>sidewall core porosity</enumeration>
+		<enumeration>sigma</enumeration>
+		<enumeration>sigma formation</enumeration>
+		<enumeration>sigma gas</enumeration>
+		<enumeration>sigma hydrocarbon</enumeration>
+		<enumeration>sigma matrix</enumeration>
+		<enumeration>sigma oil</enumeration>
+		<enumeration>sigma water</enumeration>
+		<enumeration>slippage velocity correction</enumeration>
+		<enumeration>smoothed</enumeration>
+		<enumeration>spectral gamma ray</enumeration>
+		<enumeration>spherically focused conductivity</enumeration>
+		<enumeration>spherically focused resistivity</enumeration>
+		<enumeration>spontaneous potential</enumeration>
+		<enumeration>spreading loss correction</enumeration>
+		<enumeration>synthetic well log trace</enumeration>
+		<enumeration>temperature</enumeration>
+		<enumeration>temperature correction</enumeration>
+		<enumeration>tension</enumeration>
+		<enumeration>Th/K ratio</enumeration>
+		<enumeration>thorium</enumeration>
+		<enumeration>time</enumeration>
+		<enumeration>tool diameter correction</enumeration>
+		<enumeration>tool eccentricity correction</enumeration>
+		<enumeration>total gamma ray</enumeration>
+		<enumeration>total porosity</enumeration>
+		<enumeration>tracer survey</enumeration>
+		<enumeration>travel time</enumeration>
+		<enumeration>true conductivity</enumeration>
+		<enumeration>true resistivity</enumeration>
+		<enumeration>true vertical depth</enumeration>
+		<enumeration>tube wave dolomite porosity</enumeration>
+		<enumeration>tube wave limestone porosity</enumeration>
+		<enumeration>tube wave matrix travel time</enumeration>
+		<enumeration>tube wave sandstone porosity</enumeration>
+		<enumeration>tube wave travel time</enumeration>
+		<enumeration>uranium</enumeration>
+		<enumeration>velocity</enumeration>
+		<enumeration>volume</enumeration>
+		<enumeration>water based fluid correction</enumeration>
+		<enumeration>water holdup correction</enumeration>
+		<enumeration>water saturated conductivity</enumeration>
+		<enumeration>water saturated resistivity</enumeration>
+		<enumeration>water saturation</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="MessageProbability" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>low</enumeration>
+		<enumeration>medium</enumeration>
+		<enumeration>high</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="MessageSeverity" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>catastrophic</enumeration>
+		<enumeration>major</enumeration>
+		<enumeration>minor</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="MessageType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>alarm</enumeration>
+		<enumeration>event</enumeration>
+		<enumeration>informational</enumeration>
+		<enumeration>warning</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="MudLogParameterType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>bit parameters</enumeration>
+		<enumeration>bit type comment</enumeration>
+		<enumeration>casing point comment</enumeration>
+		<enumeration>chromatograph comment</enumeration>
+		<enumeration>circulation system comment</enumeration>
+		<enumeration>core interval comment</enumeration>
+		<enumeration>cuttings gas</enumeration>
+		<enumeration>direct fracture pressure</enumeration>
+		<enumeration>direct pore pressure measurements</enumeration>
+		<enumeration>drilling data comment</enumeration>
+		<enumeration>fracture PG estimate most likely</enumeration>
+		<enumeration>gas peaks comment</enumeration>
+		<enumeration>gas ratio comment</enumeration>
+		<enumeration>general engineering comment</enumeration>
+		<enumeration>kicks and flows</enumeration>
+		<enumeration>lithlog comment</enumeration>
+		<enumeration>lost returns</enumeration>
+		<enumeration>LWD comment</enumeration>
+		<enumeration>marker or formation top comment</enumeration>
+		<enumeration>midnight depth date</enumeration>
+		<enumeration>mud check comment</enumeration>
+		<enumeration>mud data comment</enumeration>
+		<enumeration>mudlog comment</enumeration>
+		<enumeration>overburden gradient</enumeration>
+		<enumeration>overpull on connection</enumeration>
+		<enumeration>overpull on trip</enumeration>
+		<enumeration>pore PG estimate most likely</enumeration>
+		<enumeration>pore pressure estimate while drilling</enumeration>
+		<enumeration>pressure data comment</enumeration>
+		<enumeration>shale density comment</enumeration>
+		<enumeration>short trip comment</enumeration>
+		<enumeration>show report comment</enumeration>
+		<enumeration>sidewall core comment</enumeration>
+		<enumeration>sliding Interval</enumeration>
+		<enumeration>steam still results comment</enumeration>
+		<enumeration>survey comment</enumeration>
+		<enumeration>temperature data comment</enumeration>
+		<enumeration>temperature trend comment</enumeration>
+		<enumeration>wireline log comment</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="NADTypes" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>NAD27</enumeration>
+		<enumeration>NAD83</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="NameTagLocation" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="NameTagNumberingScheme" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="NameTagTechnology" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="NozzleType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>extended</enumeration>
+		<enumeration>normal</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="OTDRReason" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>pre-installation</enumeration>
+		<enumeration>post-installation</enumeration>
+		<enumeration>DTS run</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="PitType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>bulk</enumeration>
+		<enumeration>chemical</enumeration>
+		<enumeration>drilling</enumeration>
+		<enumeration>mix</enumeration>
+		<enumeration>mud cleaning</enumeration>
+		<enumeration>sand trap</enumeration>
+		<enumeration>slug</enumeration>
+		<enumeration>storage</enumeration>
+		<enumeration>surge tank</enumeration>
+		<enumeration>trip tank</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="Projection" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>Albers equal area</enumeration>
+		<enumeration>azimuthal equidistant</enumeration>
+		<enumeration>Cassini</enumeration>
+		<enumeration>equidistant conic</enumeration>
+		<enumeration>equirectangular</enumeration>
+		<enumeration>gnomonic</enumeration>
+		<enumeration>Lambert azimuthal</enumeration>
+		<enumeration>Lambert conformal conic</enumeration>
+		<enumeration>Mercator</enumeration>
+		<enumeration>Miller</enumeration>
+		<enumeration>oblique Mercator</enumeration>
+		<enumeration>orthographic</enumeration>
+		<enumeration>perspective</enumeration>
+		<enumeration>polar stereographic</enumeration>
+		<enumeration>polyconic</enumeration>
+		<enumeration>sinusoidal</enumeration>
+		<enumeration>state plane</enumeration>
+		<enumeration>stereographic</enumeration>
+		<enumeration>transverse Mercator</enumeration>
+		<enumeration>universal transverse Mercator</enumeration>
+		<enumeration>user defined</enumeration>
+		<enumeration>Van der Grinten</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ProjectionVariantsObliqueMercator" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>default</enumeration>
+		<enumeration>rectified</enumeration>
+		<enumeration>rectified skew</enumeration>
+		<enumeration>rectified skew center origin</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="PumpOpType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>drilling</enumeration>
+		<enumeration>reaming</enumeration>
+		<enumeration>circulating</enumeration>
+		<enumeration>slow pump</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="PumpType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>centrifugal</enumeration>
+		<enumeration>duplex</enumeration>
+		<enumeration>triplex</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="QualifierType" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="RealtimeData" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="RigType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>barge</enumeration>
+		<enumeration>coiled tubing</enumeration>
+		<enumeration>floater</enumeration>
+		<enumeration>jackup</enumeration>
+		<enumeration>land</enumeration>
+		<enumeration>platform</enumeration>
+		<enumeration>semi-submersible</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="RiskAffectedPersonnel" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>cementer</enumeration>
+		<enumeration>company man</enumeration>
+		<enumeration>contractor</enumeration>
+		<enumeration>directional driller</enumeration>
+		<enumeration>driller</enumeration>
+		<enumeration>drilling engineer</enumeration>
+		<enumeration>drilling superintendent</enumeration>
+		<enumeration>drilling team</enumeration>
+		<enumeration>facility engineer</enumeration>
+		<enumeration>field service manager</enumeration>
+		<enumeration>foreman</enumeration>
+		<enumeration>general service supervisor</enumeration>
+		<enumeration>geologist</enumeration>
+		<enumeration>member</enumeration>
+		<enumeration>mud engineer</enumeration>
+		<enumeration>mud logger</enumeration>
+		<enumeration>MWD or LWD engineer</enumeration>
+		<enumeration>perform engineer</enumeration>
+		<enumeration>petrophysicist</enumeration>
+		<enumeration>production engineer</enumeration>
+		<enumeration>remotely operated vehicle engineer</enumeration>
+		<enumeration>safety manger</enumeration>
+		<enumeration>sales engineer</enumeration>
+		<enumeration>service supervisor</enumeration>
+		<enumeration>technical support</enumeration>
+		<enumeration>tool pusher</enumeration>
+		<enumeration>wireline engineer</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="RiskCategory" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>hydraulics</enumeration>
+		<enumeration>mechanical</enumeration>
+		<enumeration>time related</enumeration>
+		<enumeration>wellbore stability</enumeration>
+		<enumeration>directional drilling</enumeration>
+		<enumeration>bit</enumeration>
+		<enumeration>equipment failure</enumeration>
+		<enumeration>completion</enumeration>
+		<enumeration>casing</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>HSE</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="RiskSubCategory" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>gas kick</enumeration>
+		<enumeration>shallow water influx</enumeration>
+		<enumeration>other influx or kicks</enumeration>
+		<enumeration>loss circulation</enumeration>
+		<enumeration>poor hole cleaning</enumeration>
+		<enumeration>good hole cleaning at high ROP</enumeration>
+		<enumeration>high mud weight</enumeration>
+		<enumeration>special additives needed</enumeration>
+		<enumeration>gumbo problems</enumeration>
+		<enumeration>high ECD - rheology related</enumeration>
+		<enumeration>excessive circulation</enumeration>
+		<enumeration>performing a kill</enumeration>
+		<enumeration>mud weight change</enumeration>
+		<enumeration>excessive pipe cement scaling</enumeration>
+		<enumeration>pit gain or loss</enumeration>
+		<enumeration>mud stability problems</enumeration>
+		<enumeration>shallow gas flow</enumeration>
+		<enumeration>twist off</enumeration>
+		<enumeration>stuck pipe</enumeration>
+		<enumeration>wireline stuck in hole</enumeration>
+		<enumeration>stick and slip</enumeration>
+		<enumeration>vibration - axial</enumeration>
+		<enumeration>vibration - torsional</enumeration>
+		<enumeration>vibration - transverse</enumeration>
+		<enumeration>vibration unknown or rough drilling</enumeration>
+		<enumeration>uneven wear of BHA</enumeration>
+		<enumeration>uneven wear of drillstring</enumeration>
+		<enumeration>excessive torque</enumeration>
+		<enumeration>excessive drag</enumeration>
+		<enumeration>reaming greater than 2 hours</enumeration>
+		<enumeration>washouts</enumeration>
+		<enumeration>tight hole or overPull</enumeration>
+		<enumeration>failed inspections or fatigue wear</enumeration>
+		<enumeration>mechanical</enumeration>
+		<enumeration>drilling greater than 1000 feet/day</enumeration>
+		<enumeration>drilling greater than 2000 feet/day</enumeration>
+		<enumeration>drilling less than 20 feet/day</enumeration>
+		<enumeration>trips greater than 24 hours</enumeration>
+		<enumeration>excessive time for BHA makeup</enumeration>
+		<enumeration>waiting on decisions</enumeration>
+		<enumeration>waiting on weather</enumeration>
+		<enumeration>waiting on tools</enumeration>
+		<enumeration>sloughing or packoffs</enumeration>
+		<enumeration>ballooning</enumeration>
+		<enumeration>fracture problems</enumeration>
+		<enumeration>unstable zones</enumeration>
+		<enumeration>formation integrity test</enumeration>
+		<enumeration>leak-off test</enumeration>
+		<enumeration>tectonics</enumeration>
+		<enumeration>pore pressure</enumeration>
+		<enumeration>breakouts</enumeration>
+		<enumeration>bed parallel</enumeration>
+		<enumeration>wellbore stability</enumeration>
+		<enumeration>excessive doglegs</enumeration>
+		<enumeration>sidetrack</enumeration>
+		<enumeration>BHA change for directional</enumeration>
+		<enumeration>wrong total flow area</enumeration>
+		<enumeration>well collision - actual</enumeration>
+		<enumeration>well collision - technical</enumeration>
+		<enumeration>geosteering</enumeration>
+		<enumeration>abnormal tendency changes</enumeration>
+		<enumeration>resurveying</enumeration>
+		<enumeration>in-field referencing (IFR) actions</enumeration>
+		<enumeration>bit or BHA performance</enumeration>
+		<enumeration>drilling optimization</enumeration>
+		<enumeration>bit balling</enumeration>
+		<enumeration>lost cones or broken cutters</enumeration>
+		<enumeration>excessive bit wear or gauge</enumeration>
+		<enumeration>low rate of bit penetration</enumeration>
+		<enumeration>high rate of bit penetration</enumeration>
+		<enumeration>downhole tool</enumeration>
+		<enumeration>surface system</enumeration>
+		<enumeration>motor or rotary steerable system failure</enumeration>
+		<enumeration>topdrive failure</enumeration>
+		<enumeration>hoisting equipment failure</enumeration>
+		<enumeration>circulating equipment failure</enumeration>
+		<enumeration>electrical system failure</enumeration>
+		<enumeration>blow out preventer events</enumeration>
+		<enumeration>surface instrumentation problems</enumeration>
+		<enumeration>rig communications</enumeration>
+		<enumeration>completion equipment failure</enumeration>
+		<enumeration>miscellaneous rig equipment</enumeration>
+		<enumeration>tool or equipment failure</enumeration>
+		<enumeration>squeeze jobs</enumeration>
+		<enumeration>casing surge losses</enumeration>
+		<enumeration>stuck casing or completion</enumeration>
+		<enumeration>shoe failures</enumeration>
+		<enumeration>early cement setup</enumeration>
+		<enumeration>casing collapse</enumeration>
+		<enumeration>milling</enumeration>
+		<enumeration>excessive casing wear or cuttings</enumeration>
+		<enumeration>excessive formation damage or skin</enumeration>
+		<enumeration>casing rotation or reciprocation rqd</enumeration>
+		<enumeration>broaching</enumeration>
+		<enumeration>completion or casing</enumeration>
+		<enumeration>stratigraphy</enumeration>
+		<enumeration>fishing</enumeration>
+		<enumeration>junk in hole</enumeration>
+		<enumeration>delay due to political unrest</enumeration>
+		<enumeration>rig move</enumeration>
+		<enumeration>gas hydrates</enumeration>
+		<enumeration>pending analysis</enumeration>
+		<enumeration>riser disconnect</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>personnel</enumeration>
+		<enumeration>environmental</enumeration>
+		<enumeration>automotive</enumeration>
+		<enumeration>asset</enumeration>
+		<enumeration>information</enumeration>
+		<enumeration>time</enumeration>
+		<enumeration>HSE</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="RiskType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>risk</enumeration>
+		<enumeration>event</enumeration>
+		<enumeration>near miss</enumeration>
+		<enumeration>best practice</enumeration>
+		<enumeration>lessons learned</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ScrType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>string annulus</enumeration>
+		<enumeration>string kill line</enumeration>
+		<enumeration>string choke line</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ShowFluorescence" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>faint</enumeration>
+		<enumeration>bright</enumeration>
+		<enumeration>none</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ShowLevel" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>blooming</enumeration>
+		<enumeration>streaming</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ShowRating" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>none</enumeration>
+		<enumeration>very poor</enumeration>
+		<enumeration>poor</enumeration>
+		<enumeration>fair</enumeration>
+		<enumeration>good</enumeration>
+		<enumeration>very good</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ShowSpeed" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>slow</enumeration>
+		<enumeration>moderately fast</enumeration>
+		<enumeration>fast</enumeration>
+		<enumeration>instantaneous</enumeration>
+		<enumeration>none</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="SupportCraft" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>barge</enumeration>
+		<enumeration>standby boat</enumeration>
+		<enumeration>helicopter</enumeration>
+		<enumeration>supply boat</enumeration>
+		<enumeration>truck</enumeration>
+		<enumeration>crew vehicle</enumeration>
+		<enumeration>tug boat</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="SurfEquipType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>IADC</enumeration>
+		<enumeration>custom</enumeration>
+		<enumeration>coiled tubing</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TargetCategory" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>geological</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TargetScope" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>3D volume</enumeration>
+		<enumeration>ellipsoid</enumeration>
+		<enumeration>elliptical</enumeration>
+		<enumeration>hardLine</enumeration>
+		<enumeration>irregular</enumeration>
+		<enumeration>lease line</enumeration>
+		<enumeration>line</enumeration>
+		<enumeration>plane</enumeration>
+		<enumeration>point</enumeration>
+		<enumeration>rectangular</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TargetSectionScope" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>arc</enumeration>
+		<enumeration>line</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TrajStationStatus" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>locked</enumeration>
+		<enumeration>open</enumeration>
+		<enumeration>rejected</enumeration>
+		<enumeration>valid</enumeration>
+		<enumeration>position</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TrajStationType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>azimuth on plane</enumeration>
+		<enumeration>buildrate to delta-MD</enumeration>
+		<enumeration>buildrate to INCL</enumeration>
+		<enumeration>buildrate to MD</enumeration>
+		<enumeration>buildrate and turnrate to AZI</enumeration>
+		<enumeration>buildrate and turnrate to delta-MD</enumeration>
+		<enumeration>buildrate and turnrate to INCL</enumeration>
+		<enumeration>buildrate and turnrate to INCL and AZI</enumeration>
+		<enumeration>buildrate and turnrate to MD</enumeration>
+		<enumeration>buildrate and turnrate to TVD</enumeration>
+		<enumeration>buildrate TVD</enumeration>
+		<enumeration>casing MD</enumeration>
+		<enumeration>casing TVD</enumeration>
+		<enumeration>DLS</enumeration>
+		<enumeration>DLS to AZI and MD</enumeration>
+		<enumeration>DLS to AZI-TVD</enumeration>
+		<enumeration>DLS to INCL</enumeration>
+		<enumeration>DLS to INCL and AZI</enumeration>
+		<enumeration>DLS to INCL and MD</enumeration>
+		<enumeration>DLS to INCL and TVD</enumeration>
+		<enumeration>DLS to NS, EW and TVD</enumeration>
+		<enumeration>DLS and toolface to AZI</enumeration>
+		<enumeration>DLS and toolface to delta-MD</enumeration>
+		<enumeration>DLS and toolface to INCL</enumeration>
+		<enumeration>DLS and toolface to INCL-AZI</enumeration>
+		<enumeration>DLS and toolface to MD</enumeration>
+		<enumeration>DLS and toolface to TVD</enumeration>
+		<enumeration>formation MD</enumeration>
+		<enumeration>formation TVD</enumeration>
+		<enumeration>gyro inertial</enumeration>
+		<enumeration>gyro MWD</enumeration>
+		<enumeration>gyro north seeking</enumeration>
+		<enumeration>hold to delta-MD</enumeration>
+		<enumeration>hold to MD</enumeration>
+		<enumeration>hold to TVD</enumeration>
+		<enumeration>INCL, AZI and TVD</enumeration>
+		<enumeration>magnetic multi-shot</enumeration>
+		<enumeration>magnetic MWD</enumeration>
+		<enumeration>magnetic single shot</enumeration>
+		<enumeration>marker MD</enumeration>
+		<enumeration>marker TVD</enumeration>
+		<enumeration>NS, EW and TVD</enumeration>
+		<enumeration>target center</enumeration>
+		<enumeration>target offset</enumeration>
+		<enumeration>tie in point</enumeration>
+		<enumeration>turnrate to AZI</enumeration>
+		<enumeration>turnrate to delta-MD</enumeration>
+		<enumeration>turnrate to MD</enumeration>
+		<enumeration>turnrate to TVD</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TubularAssembly" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>drilling</enumeration>
+		<enumeration>directional drilling</enumeration>
+		<enumeration>fishing</enumeration>
+		<enumeration>condition mud</enumeration>
+		<enumeration>tubing conveyed logging</enumeration>
+		<enumeration>cementing</enumeration>
+		<enumeration>casing</enumeration>
+		<enumeration>clean out</enumeration>
+		<enumeration>completion or testing</enumeration>
+		<enumeration>coring</enumeration>
+		<enumeration>hole opening or underreaming</enumeration>
+		<enumeration>milling or dressing or cutting</enumeration>
+		<enumeration>wiper or check or reaming</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TubularComponent" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>non-magnetic stabilizer</enumeration>
+		<enumeration>non-magnetic collar</enumeration>
+		<enumeration>stabilizer</enumeration>
+		<enumeration>adjustable kickoff</enumeration>
+		<enumeration>accelerator</enumeration>
+		<enumeration>rotary steering tool</enumeration>
+		<enumeration>sub-bar catcher</enumeration>
+		<enumeration>sub-bent</enumeration>
+		<enumeration>bit core diamond</enumeration>
+		<enumeration>bit core PDC</enumeration>
+		<enumeration>bit diamond fixed cut</enumeration>
+		<enumeration>bit insert roller cone</enumeration>
+		<enumeration>bit mill tooth roller cone</enumeration>
+		<enumeration>bit PDC fixed cutter</enumeration>
+		<enumeration>sub-bit</enumeration>
+		<enumeration>bridge plug</enumeration>
+		<enumeration>bullnose</enumeration>
+		<enumeration>bull plug</enumeration>
+		<enumeration>sub-bumper</enumeration>
+		<enumeration>casing</enumeration>
+		<enumeration>casing cutter</enumeration>
+		<enumeration>hanger casing subsea</enumeration>
+		<enumeration>hanger casing surface</enumeration>
+		<enumeration>casing head</enumeration>
+		<enumeration>catch assembly</enumeration>
+		<enumeration>sub-catcher</enumeration>
+		<enumeration>sub-circulation</enumeration>
+		<enumeration>coiled tubing in hole</enumeration>
+		<enumeration>coiled tubing on coil</enumeration>
+		<enumeration>drill pipe compressive</enumeration>
+		<enumeration>sub-cone</enumeration>
+		<enumeration>core barrel</enumeration>
+		<enumeration>core orientation barrel</enumeration>
+		<enumeration>sub-crossover</enumeration>
+		<enumeration>casing crossover</enumeration>
+		<enumeration>sub-dart</enumeration>
+		<enumeration>die collar</enumeration>
+		<enumeration>die collar LH</enumeration>
+		<enumeration>directional guidance system</enumeration>
+		<enumeration>drill collar</enumeration>
+		<enumeration>drill pipe</enumeration>
+		<enumeration>drill pipe LH</enumeration>
+		<enumeration>drill stem test BHA</enumeration>
+		<enumeration>drive pipe</enumeration>
+		<enumeration>dual catch assembly</enumeration>
+		<enumeration>extension bowl overshot</enumeration>
+		<enumeration>extension sub-overshot</enumeration>
+		<enumeration>float collar</enumeration>
+		<enumeration>float shoe</enumeration>
+		<enumeration>sub-float</enumeration>
+		<enumeration>flow head</enumeration>
+		<enumeration>guide shoe</enumeration>
+		<enumeration>MWD hang off sub</enumeration>
+		<enumeration>heavy weight drill pipe</enumeration>
+		<enumeration>heavy weight drill pipe LH</enumeration>
+		<enumeration>riser high pressure</enumeration>
+		<enumeration>bit hole opener</enumeration>
+		<enumeration>casing inflatable packer</enumeration>
+		<enumeration>motor instrumented</enumeration>
+		<enumeration>jar</enumeration>
+		<enumeration>sub-jetting</enumeration>
+		<enumeration>junk basket</enumeration>
+		<enumeration>junk basket reverse circulation</enumeration>
+		<enumeration>sub-junk</enumeration>
+		<enumeration>kelly</enumeration>
+		<enumeration>keyseat wiper tool</enumeration>
+		<enumeration>landing float collar</enumeration>
+		<enumeration>lead impression block</enumeration>
+		<enumeration>liner</enumeration>
+		<enumeration>hanger liner</enumeration>
+		<enumeration>magnet</enumeration>
+		<enumeration>riser marine</enumeration>
+		<enumeration>mill dress</enumeration>
+		<enumeration>mill flat bottom</enumeration>
+		<enumeration>mill hollow</enumeration>
+		<enumeration>mill polish</enumeration>
+		<enumeration>mill section</enumeration>
+		<enumeration>mill taper</enumeration>
+		<enumeration>mill washover</enumeration>
+		<enumeration>mill packer picker assembly</enumeration>
+		<enumeration>millout extension</enumeration>
+		<enumeration>multilateral hanger running tool</enumeration>
+		<enumeration>hanger mud line</enumeration>
+		<enumeration>motor</enumeration>
+		<enumeration>mule shoe</enumeration>
+		<enumeration>logging while drilling tool</enumeration>
+		<enumeration>stabilizer near bit roller reamer</enumeration>
+		<enumeration>stabilizer near bit</enumeration>
+		<enumeration>stabilizer non-rotating</enumeration>
+		<enumeration>sub-orienting</enumeration>
+		<enumeration>other</enumeration>
+		<enumeration>overshot</enumeration>
+		<enumeration>overshot LH</enumeration>
+		<enumeration>oversize lip guide overshot</enumeration>
+		<enumeration>packer</enumeration>
+		<enumeration>polished bore receptacle</enumeration>
+		<enumeration>mill pilot</enumeration>
+		<enumeration>pipe cutter</enumeration>
+		<enumeration>ported stinger</enumeration>
+		<enumeration>sub-ported</enumeration>
+		<enumeration>prepacked screens</enumeration>
+		<enumeration>sub-pressure relief</enumeration>
+		<enumeration>riser production</enumeration>
+		<enumeration>MWD pulser</enumeration>
+		<enumeration>sub-pump out</enumeration>
+		<enumeration>sub-restrictor</enumeration>
+		<enumeration>packer retrieve TT squeeze</enumeration>
+		<enumeration>reversing tool</enumeration>
+		<enumeration>stabilizer string roller reamer</enumeration>
+		<enumeration>packer RTTS</enumeration>
+		<enumeration>running tool</enumeration>
+		<enumeration>safety joint</enumeration>
+		<enumeration>safety joint LH</enumeration>
+		<enumeration>sub-saver</enumeration>
+		<enumeration>scab liner bit guide</enumeration>
+		<enumeration>scraper</enumeration>
+		<enumeration>scratchers</enumeration>
+		<enumeration>casing shoe screw-in</enumeration>
+		<enumeration>sub-shock</enumeration>
+		<enumeration>drill collar short</enumeration>
+		<enumeration>sub-side entry</enumeration>
+		<enumeration>slotted liner</enumeration>
+		<enumeration>spear</enumeration>
+		<enumeration>stage cement collar</enumeration>
+		<enumeration>motor steerable</enumeration>
+		<enumeration>packer storm valve RTTS</enumeration>
+		<enumeration>stabilizer string</enumeration>
+		<enumeration>surface pipe</enumeration>
+		<enumeration>taper tap</enumeration>
+		<enumeration>taper tap LH</enumeration>
+		<enumeration>tubing-conveyed perforating gun</enumeration>
+		<enumeration>thruster</enumeration>
+		<enumeration>tieback polished bore receptacle</enumeration>
+		<enumeration>tieback stinger</enumeration>
+		<enumeration>tubing</enumeration>
+		<enumeration>hanger tubing</enumeration>
+		<enumeration>turbine</enumeration>
+		<enumeration>bit under reamer</enumeration>
+		<enumeration>stabilizer variable blade</enumeration>
+		<enumeration>washover pipe</enumeration>
+		<enumeration>mill watermelon</enumeration>
+		<enumeration>whipstock</enumeration>
+		<enumeration>whipstock anchor</enumeration>
+		<enumeration>stabilizer turbo back</enumeration>
+		<enumeration>stabilizer inline</enumeration>
+		<enumeration>stabilizer steerable</enumeration>
+		<enumeration>sub-stop</enumeration>
+		<enumeration>sub-filter</enumeration>
+		<enumeration>mill casing cutting</enumeration>
+		<enumeration>reamer</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="TypeSurveyTool" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>magnetic MWD</enumeration>
+		<enumeration>gyroscopic MWD</enumeration>
+		<enumeration>gyroscopic north seeking</enumeration>
+		<enumeration>gyroscopic inertial</enumeration>
+		<enumeration>magnetic single-shot</enumeration>
+		<enumeration>magnetic multiple-shot</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="WellDirection" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>huff-n-puff</enumeration>
+		<enumeration>injector</enumeration>
+		<enumeration>producer</enumeration>
+		<enumeration>uncertain</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="WellFluid" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>air</enumeration>
+		<enumeration>condensate</enumeration>
+		<enumeration>dry</enumeration>
+		<enumeration>gas</enumeration>
+		<enumeration>gas-water</enumeration>
+		<enumeration>non HC gas</enumeration>
+		<enumeration>non HC gas -- CO2</enumeration>
+		<enumeration>oil</enumeration>
+		<enumeration>oil-gas</enumeration>
+		<enumeration>oil-water</enumeration>
+		<enumeration>steam</enumeration>
+		<enumeration>water</enumeration>
+		<enumeration>water -- brine</enumeration>
+		<enumeration>water -- fresh water</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="WellPurpose" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>appraisal</enumeration>
+		<enumeration>appraisal -- confirmation appraisal</enumeration>
+		<enumeration>appraisal -- exploratory appraisal</enumeration>
+		<enumeration>exploration</enumeration>
+		<enumeration>exploration -- deeper-pool wildcat</enumeration>
+		<enumeration>exploration -- new-field wildcat</enumeration>
+		<enumeration>exploration -- new-pool wildcat</enumeration>
+		<enumeration>exploration -- outpost wildcat</enumeration>
+		<enumeration>exploration -- shallower-pool wildcat</enumeration>
+		<enumeration>development</enumeration>
+		<enumeration>development -- infill development</enumeration>
+		<enumeration>development -- injector</enumeration>
+		<enumeration>development -- producer</enumeration>
+		<enumeration>fluid storage</enumeration>
+		<enumeration>fluid storage -- gas storage</enumeration>
+		<enumeration>general srvc</enumeration>
+		<enumeration>general srvc -- borehole re-acquisition</enumeration>
+		<enumeration>general srvc -- observation</enumeration>
+		<enumeration>general srvc -- relief</enumeration>
+		<enumeration>general srvc -- research</enumeration>
+		<enumeration>general srvc -- research -- drill test</enumeration>
+		<enumeration>general srvc -- research -- strat test</enumeration>
+		<enumeration>general srvc -- waste disposal</enumeration>
+		<enumeration>mineral</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="WellStatus" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>abandoned</enumeration>
+		<enumeration>active</enumeration>
+		<enumeration>active -- injecting</enumeration>
+		<enumeration>active -- producing</enumeration>
+		<enumeration>completed</enumeration>
+		<enumeration>drilling</enumeration>
+		<enumeration>partially plugged</enumeration>
+		<enumeration>permitted</enumeration>
+		<enumeration>plugged and abandoned</enumeration>
+		<enumeration>proposed</enumeration>
+		<enumeration>sold</enumeration>
+		<enumeration>suspended</enumeration>
+		<enumeration>temporarily abandoned</enumeration>
+		<enumeration>testing</enumeration>
+		<enumeration>tight</enumeration>
+		<enumeration>working over</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="WellboreShape" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>build and hold</enumeration>
+		<enumeration>deviated</enumeration>
+		<enumeration>double kickoff</enumeration>
+		<enumeration>horizontal</enumeration>
+		<enumeration>S-shaped</enumeration>
+		<enumeration>vertical</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="WellboreType" base="d2p1:abstractTypeEnum" variety="Atomic">
+		<enumeration>bypass</enumeration>
+		<enumeration>initial</enumeration>
+		<enumeration>redrill</enumeration>
+		<enumeration>reentry</enumeration>
+		<enumeration>respud</enumeration>
+		<enumeration>sidetrack</enumeration>
+		<enumeration>unknown</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="MeasuredDepthUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m</enumeration>
+		<enumeration>ft</enumeration>
+		<enumeration>ftUS</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="PercentUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>%</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="WellVerticalCoordinateUom" base="d2p1:abstractUomEnum" variety="Atomic">
+		<enumeration>m</enumeration>
+		<enumeration>ft</enumeration>
+		<enumeration>ftUS</enumeration>
+		<enumeration>ftBr(65)</enumeration>
+	</valueType>
+	<valueType name="anyDate" variety="Union" memberTypes="{http://www.w3.org/2001/XMLSchema}dateTime {http://www.w3.org/2001/XMLSchema}date {http://www.w3.org/2001/XMLSchema}gYearMonth {http://www.w3.org/2001/XMLSchema}gYear"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="beaufortScaleIntegerCode" base="d2p1:abstractShort" variety="Atomic" minInclusive="0" maxInclusive="12"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="calendarYear" base="d2p1:abstractYear" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="commentString" base="d2p1:abstractCommentString" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="date" base="d2p1:abstractDate" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="descriptionString" base="d2p1:abstractString" variety="Atomic" maxLength="256"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="encodedValueString" base="d2p1:abstractString" variety="Atomic" maxLength="32"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="geodeticZoneString" base="d2p1:abstractString" variety="Atomic" maxLength="3">
+		<pattern>([1-9]|[1-5][0-9]|60)[NS]</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="iadcBearingWearCode" base="d2p1:abstractString" variety="Atomic" maxLength="1">
+		<pattern>[0-8EFNX]</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="iadcIntegerCode" base="d2p1:abstractShort" variety="Atomic" minInclusive="0" maxInclusive="8"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="integerCount" base="d2p1:abstractInt" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="kindString" base="d2p1:abstractTypeEnum" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="levelIntegerCode" base="d2p1:abstractShort" variety="Atomic" minInclusive="0" maxInclusive="8"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="listOfDouble" variety="List" itemType="d2p1:abstractDouble"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="listOfString" variety="List" itemType="d2p1:str32"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="logicalBoolean" base="d2p1:abstractBoolean" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="nameString" base="d2p1:abstractNameString" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="nonNegativeCount" base="d2p1:abstractShort" variety="Atomic" minInclusive="0"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="positiveBigCount" base="d2p1:abstractInt" variety="Atomic" minInclusive="1"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="positiveCount" base="d2p1:abstractPositiveCount" variety="Atomic" minInclusive="1"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="pumpActionIntegerCode" base="d2p1:abstractShort" variety="Atomic" minInclusive="1" maxInclusive="2"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="refString" base="d2p1:abstractUidString" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="refWellDatum" base="d2p1:abstractUidString" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="schemaVersionString" base="d2p1:abstractString" variety="Atomic" maxLength="16">
+		<pattern>1\.3\.1\.([1-9]|([1-9][0-9]))</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="shortDescriptionString" base="d2p1:abstractString" variety="Atomic" maxLength="64"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="str16" base="d2p1:abstractString" variety="Atomic" maxLength="16"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="str2" base="d2p1:abstractString" variety="Atomic" maxLength="2"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="str32" base="d2p1:abstractString" variety="Atomic" maxLength="32"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="timeZone" base="d2p1:abstractString" variety="Atomic">
+		<pattern>[Z]|([-+](([01][0-9])|(2[0-3])):[0-5][0-9])</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="timestamp" base="d2p1:abstractDateTime" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="uidString" base="d2p1:abstractUidString" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="uncollapsedString" base="d2p1:abstractUncollapsedString" variety="Atomic" maxLength="256"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="unitlessQuantity" base="d2p1:abstractDouble" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://www.witsml.org/schemas/131" name="uomString" base="d2p1:abstractUomEnum" variety="Atomic"/>
+	<objectType name="abstractMeasure" abstract="true">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractDouble" form="Text"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="accelerationLinearMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:accelerationLinearUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="anglePerLengthMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:anglePerLengthUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="anglePerTimeMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:anglePerTimeUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="areaMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:areaUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="areaPerAreaMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:areaPerAreaUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="densityMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:densityUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="dimensionlessMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:dimensionlessUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="dynamicViscosityMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:dynamicViscosityUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="electricCurrentMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:electricCurrentUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="electricPotentialMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:electricPotentialUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="energyPerAreaMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:energyPerAreaUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="equivalentPerMassMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:equivalentPerMassUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="forceMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:forceUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="forcePerLengthMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:forcePerLengthUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="forcePerVolumeMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:forcePerVolumeUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="frequencyMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:frequencyUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="illuminanceMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:illuminanceUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="lengthMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:lengthUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="lengthPerLengthMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:lengthPerLengthUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="magneticFieldStrengthMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:magneticFieldStrengthUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="magneticInductionMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:magneticInductionUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="massConcentrationMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:massConcentrationUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="massMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:massUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="massPerLengthMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:massPerLengthUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="momentOfForceMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:momentOfForceUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="perLengthMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:perLengthUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="planeAngleMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:planeAngleUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="powerMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:powerUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="pressureMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:pressureUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="relativePowerMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:relativePowerUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="specificVolumeMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:specificVolumeUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="thermodynamicTemperatureMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:thermodynamicTemperatureUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="timeMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:timeUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="velocityMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:velocityUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="volumeFlowRateMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:volumeFlowRateUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="volumeMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:volumeUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="volumePerVolumeMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:volumePerVolumeUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType name="cost">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="currency" type="d3p1:kindString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractDouble" form="Text"/>
+	</objectType>
+	<objectType name="encodedArrayString">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uom" type="d3p1:uomString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractMaximumLengthString" form="Text"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="generalMeasureType" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:uomString" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="genericMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:uomString" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="indexCurve">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="columnIndex" type="d3p1:nonNegativeCount" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:str32" form="Text"/>
+	</objectType>
+	<objectType name="indexedObject">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="index" type="d3p1:positiveCount" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="name" type="d3p1:kindString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uom" type="d3p1:uomString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="description" type="d3p1:descriptionString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractTypeEnum" form="Text"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="measuredDepthCoord" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:MeasuredDepthUom" lowerBound="1" form="Attribute"/>
+		<property name="datum" type="d2p1:refWellDatum" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="nameStruct">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="namingSystem" type="d3p1:nameString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractNameString" form="Text"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="ratioGenericMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:uomString" lowerBound="1" form="Attribute"/>
+		<property name="numerator" type="d2p1:unitlessQuantity" lowerBound="0" form="Attribute"/>
+		<property name="denominator" type="d2p1:unitlessQuantity" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="refNameString">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uidRef" type="d3p1:refString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractNameString" form="Text"/>
+	</objectType>
+	<objectType name="refObjectString">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="object" type="d3p1:nameString" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uidRef" type="d3p1:refString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractNameString" form="Text"/>
+	</objectType>
+	<objectType name="refPositiveCount">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uidRef" type="d3p1:refString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractPositiveCount" form="Text"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="temperatureSlopeMeasure" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:uomString" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="typeOptionalClassString">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="classType" type="d3p1:kindString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractNameString" form="Text"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="volumePerVolumeMeasurePercent" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:PercentUom" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="wellElevationCoord" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:WellVerticalCoordinateUom" lowerBound="1" form="Attribute"/>
+		<property name="datum" type="d2p1:refWellDatum" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="wellKnownNameStruct">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="namingSystem" type="d3p1:nameString" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="code" type="d3p1:kindString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="__content" type="d3p1:abstractNameString" form="Text"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="wellVerticalDepthCoord" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:WellVerticalCoordinateUom" lowerBound="1" form="Attribute"/>
+		<property name="datum" type="d2p1:refWellDatum" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.witsml.org/schemas/131" name="yAxisAzimuth" base="d2p1:abstractMeasure">
+		<property name="uom" type="d2p1:planeAngleUom" lowerBound="1" form="Attribute"/>
+		<property name="northDirection" type="d2p1:AziRef" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="auditType">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Event" type="d3p1:eventType" upperBound="-1"/>
+	</objectType>
+	<objectType name="cs_documentInfo">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="DocumentName" type="d3p1:nameStruct"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="DocumentAlias" type="d3p1:nameStruct" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="DocumentDate" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="documentClass" type="d3p1:nameStruct" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="FileCreationInformation" type="d3p1:fileCreationType" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="SecurityInformation" type="d3p1:securityInfoType" lowerBound="0" upperBound="5"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Disclaimer" type="d3p1:commentString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="AuditTrail" type="d3p1:auditType" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Owner" type="d3p1:nameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Comment" type="d3p1:commentString" lowerBound="0"/>
+	</objectType>
+	<objectType name="eventType">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="EventDate" type="d3p1:timestamp"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="ResponsibleParty" type="d3p1:nameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Comment" type="d3p1:commentString" lowerBound="0"/>
+	</objectType>
+	<objectType name="fileCreationType">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="FileCreationDate" type="d3p1:timestamp"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="SoftwareName" type="d3p1:nameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="FileCreator" type="d3p1:nameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Comment" type="d3p1:commentString" lowerBound="0"/>
+	</objectType>
+	<objectType name="securityInfoType">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Class" type="d3p1:kindString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="System" type="d3p1:kindString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="EndDate" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="Comment" type="d3p1:commentString" lowerBound="0"/>
+	</objectType>
+	<objectType name="cs_drillingParams">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uid" type="d3p1:uidString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="eTimOpBit" type="d3p1:timeMeasure"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="mdHoleStart" type="d3p1:measuredDepthCoord" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="mdHoleStop" type="d3p1:measuredDepthCoord"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tubular" type="d3p1:refNameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="hkldRot" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="overPull" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="slackOff" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="hkldUp" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="hkldDn" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tqOnBotAv" type="d3p1:momentOfForceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tqOnBotMx" type="d3p1:momentOfForceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tqOnBotMn" type="d3p1:momentOfForceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tqOffBotAv" type="d3p1:momentOfForceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tqDhAv" type="d3p1:momentOfForceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="wtAboveJar" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="wtBelowJar" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="wtMud" type="d3p1:densityMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="flowratePump" type="d3p1:volumeFlowRateMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="powBit" type="d3p1:powerMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="velNozzleAv" type="d3p1:velocityMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="presDropBit" type="d3p1:pressureMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="cTimHold" type="d3p1:timeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="cTimSteering" type="d3p1:timeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="cTimDrillRot" type="d3p1:timeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="cTimDrillSlid" type="d3p1:timeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="cTimCirc" type="d3p1:timeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="cTimReam" type="d3p1:timeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="distDrillRot" type="d3p1:lengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="distDrillSlid" type="d3p1:lengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="distReam" type="d3p1:lengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="distHold" type="d3p1:lengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="distSteering" type="d3p1:lengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="rpmAv" type="d3p1:anglePerTimeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="rpmMx" type="d3p1:anglePerTimeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="rpmMn" type="d3p1:anglePerTimeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="rpmAvDh" type="d3p1:anglePerTimeMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="ropAv" type="d3p1:velocityMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="ropMx" type="d3p1:velocityMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="ropMn" type="d3p1:velocityMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="wobAv" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="wobMx" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="wobMn" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="wobAvDh" type="d3p1:forceMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="reasonTrip" type="d3p1:commentString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="objectiveBha" type="d3p1:commentString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="aziTop" type="d3p1:planeAngleMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="aziBottom" type="d3p1:planeAngleMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="inclStart" type="d3p1:planeAngleMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="inclMx" type="d3p1:planeAngleMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="inclMn" type="d3p1:planeAngleMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="inclStop" type="d3p1:planeAngleMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tempMudDhMx" type="d3p1:thermodynamicTemperatureMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="presPumpAv" type="d3p1:pressureMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="flowrateBit" type="d3p1:volumeFlowRateMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="comments" type="d3p1:commentString" lowerBound="0"/>
+	</objectType>
+	<objectType name="cs_commonData">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="sourceName" type="d3p1:nameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="dTimCreation" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="dTimLastChange" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="itemState" type="d3p1:ItemState" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="comments" type="d3p1:commentString" lowerBound="0"/>
+	</objectType>
+	<objectType name="cs_customData" open="true" sequenced="true"/>
+	<objectType name="obj_bhaRun">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uidWell" type="d3p1:uidString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uidWellbore" type="d3p1:uidString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="uid" type="d3p1:uidString" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="nameWell" type="d3p1:nameString"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="nameWellbore" type="d3p1:nameString"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="name" type="d3p1:nameString"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="tubular" type="d3p1:refNameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="dTimStart" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="dTimStop" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="dTimStartDrilling" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="dTimStopDrilling" type="d3p1:timestamp" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="planDogleg" type="d3p1:anglePerLengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="actDogleg" type="d3p1:anglePerLengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="actDoglegMx" type="d3p1:anglePerLengthMeasure" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="statusBha" type="d3p1:BhaStatus" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="numBitRun" type="d3p1:nameString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="numStringRun" type="d3p1:positiveCount" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="reasonTrip" type="d3p1:commentString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="objectiveBha" type="d3p1:commentString" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="drillingParams" type="d3p1:cs_drillingParams" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="commonData" type="d3p1:cs_commonData" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="customData" type="d3p1:cs_customData" lowerBound="0"/>
+	</objectType>
+	<objectType name="obj_bhaRuns">
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="version" type="d3p1:schemaVersionString" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="documentInfo" type="d3p1:cs_documentInfo" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.witsml.org/schemas/131" name="bhaRun" type="d3p1:obj_bhaRun" upperBound="-1"/>
+	</objectType>
+</package>

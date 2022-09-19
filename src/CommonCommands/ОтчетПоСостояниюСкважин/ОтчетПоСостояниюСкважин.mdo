@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28480ff8-424e-43f9-a14c-2aa044b12581">
+  <name>ОтчетПоСостояниюСкважин</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по состоянию скважин</value>
+  </synonym>
+  <group>NavigationPanelImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

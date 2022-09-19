@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8e76cdb-c2cd-4b90-a431-ecf0d17ef9c0">
+  <name>РаботаСДоговорами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с договорами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Договоры</picture>
+  </picture>
+  <content>BusinessProcess.БизнесПроцесс</content>
+  <content>Catalog.Договоры</content>
+  <content>Catalog.Контрагенты</content>
+</mdclass:Subsystem>

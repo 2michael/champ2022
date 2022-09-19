@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef238a31-e1aa-4d46-bacb-dc5c5bd3e2f0">
+  <producedTypes>
+    <selectionType typeId="b28efc9b-23f2-4e9f-82f6-131e6b1da6e1" valueTypeId="4110b655-0f56-48cb-b579-fb2121317c36"/>
+    <listType typeId="038aefd6-5c4b-4b20-bb22-b621b045ba95" valueTypeId="ad6942d8-7e57-4b44-b0ac-8a0ff9f1a8be"/>
+    <managerType typeId="dc6cc65c-0820-4902-94d0-16d09851996e" valueTypeId="d9ed8c0d-3536-4514-a293-d1bbea7aa8bb"/>
+    <recordSetType typeId="d97a65bf-dba3-45ef-8e79-5acb18f32f7c" valueTypeId="5446b2fe-0acd-45dc-ae62-9cfaa8e0c0bb"/>
+    <recordKeyType typeId="c0e89939-9a2c-4455-a72b-3552ba33e634" valueTypeId="f6584f84-ea04-4354-97f5-4bb615148443"/>
+    <recordType typeId="8e38ca57-1ec7-4fb1-babe-cfcc25b33c6d" valueTypeId="28757032-90ce-4c8c-9ab4-5732cf629225"/>
+    <recordManagerType typeId="9e1f2ec9-fa5f-482b-b014-9e0d98010ec8" valueTypeId="002c7c81-7c20-4f11-a6fa-7c3fc9641257"/>
+  </producedTypes>
+  <name>СобытияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>События объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9b710e0e-5cff-402e-bbe6-2426163d1328">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="79da22d9-ea5e-406d-bd4b-c7920bb8c464">
+    <name>ОписаниеСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание события</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="233b5127-eb75-436e-80c6-6ffdf5f53791">
+    <name>Обработано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработано</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0c97a40a-a289-4857-a996-f10a3aeab08d">
+    <name>НавигационнаяСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Навигационная ссылка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="7873ac12-6a96-4f46-bcbf-128e51c67bbf">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Объекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="aaecc7f7-816e-49a8-a6e7-11c9b4dea6f1">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.witsml_RealtimeData</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b3efb370-47b3-47a7-a875-5f260ba3382b">
+    <name>ТипИндекса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип индекса</value>
+    </synonym>
+    <type>
+      <types>EnumRef.witsml_LogIndexType</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7de21649-3308-46dc-bc0d-c668f01e8d4b">
+    <name>ЗначениеИндекса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение индекса</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

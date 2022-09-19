@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f9110b3-0c8d-4cb4-a126-e3edb4197460">
+  <producedTypes>
+    <objectType typeId="a54de166-74f1-47cc-8582-b5f274981c65" valueTypeId="0131b3e3-06e4-4cc1-8ec9-846180b66eb6"/>
+    <refType typeId="a53fb0d2-39f0-4386-b284-be3b05c62c79" valueTypeId="5bc27690-8587-448b-9bdc-6d34d2fbdd82"/>
+    <selectionType typeId="1f1541ec-016d-42c7-933e-5e8185fb87d9" valueTypeId="1b3a3b10-2e3a-4d2f-aad0-9ca713673fa8"/>
+    <listType typeId="9af493e4-4236-42db-87a3-3046ae1a053c" valueTypeId="d52cd320-2b4d-43b6-883f-d74573bbc906"/>
+    <managerType typeId="6f4c78f0-8c83-420b-bf21-38135e30b49a" valueTypeId="fb67b88c-4a24-469a-bd55-3f26104b2921"/>
+  </producedTypes>
+  <name>Договоры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Договоры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Договоры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Договоры.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Договоры.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="b07f8ae8-9a3c-485a-ad88-bec5d87dd264">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2d9c2c9f-85f3-4964-a14a-2502b6ae9781">
+    <name>СрокДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="ce6f94ed-f14f-4a4e-8ab1-04b5af594900">
+    <producedTypes>
+      <objectType typeId="0ef5a61d-d61d-4540-9b50-436e4cf4572d" valueTypeId="14155fb4-08ac-4ba6-af6d-76d26fb1fefa"/>
+      <rowType typeId="eae90bc3-b9f4-47b0-acfc-530bc4e0c0cf" valueTypeId="ae4f39fb-8fbf-4e5e-91d4-7cf324dee0ec"/>
+    </producedTypes>
+    <name>УслугиДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуги договора</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2b575586-cbd9-4c92-8717-df0ae38980c8">
+      <name>Услуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8b54bae3-f8fc-4d52-aa5c-890d8ab3cf71">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="834c6e7d-02f3-4fd4-ab3d-c9133c2183b4">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3187d7f-2d17-4612-892a-af29709944f5">
+  <producedTypes>
+    <objectType typeId="4dce5f80-3bce-43a8-bbde-8665bc70e7ed" valueTypeId="18e63a2a-afaf-4615-a03e-48020f859ae9"/>
+    <refType typeId="78fd8945-f179-415b-bb9b-682d3d6b56c3" valueTypeId="2bdcc488-71fd-4183-bc72-de1c9b77bb35"/>
+    <selectionType typeId="1136a592-ee06-4d67-ac18-4578c6d30029" valueTypeId="1e3f906c-eda0-46e8-a78a-3190040b20c8"/>
+    <listType typeId="b7f929e0-7051-4b4c-b874-ada0b6bb2666" valueTypeId="c11f7163-df55-45b6-bcef-f12d778c8bd0"/>
+    <managerType typeId="873590b5-af46-4438-bc4a-6b995f9091a5" valueTypeId="c619b5be-4d32-4417-87a6-8da4f0f11dc0"/>
+  </producedTypes>
+  <name>Оборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оборудование</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Оборудование.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Оборудование.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Оборудование.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Оборудование.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="930167bc-b98d-491c-90d5-cfb589edd3eb">
+    <name>ТипОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип оборудования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="18df7ca4-93e0-489b-a9a9-00aaaba5e85c">
+    <name>ГеографическиеКоординаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Географические координаты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4add522c-5bea-4efa-a31e-f66ab3097443">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="e757670d-cb95-4577-8702-21c9ef56ee08">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d3da3887-af9d-432c-be02-5e49f8e5b052">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

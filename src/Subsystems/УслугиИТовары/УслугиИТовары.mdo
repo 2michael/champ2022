@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9df7c6e7-db0a-4d56-a596-80f1d800db41">
+  <name>УслугиИТовары</name>
+  <synonym>
+    <key>ru</key>
+    <value>Услуги и товары</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Товары</picture>
+  </picture>
+  <content>Document.Поступление</content>
+  <content>Catalog.Склады</content>
+  <content>Document.ПоступлениеНаСклад</content>
+  <content>AccumulationRegister.ОстаткиНаСкладах</content>
+  <content>Document.ПеремещениеТоваровОборудования</content>
+  <content>Report.ОстаткиНаСкладах</content>
+</mdclass:Subsystem>

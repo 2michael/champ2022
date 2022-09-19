@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17446acd-f5bd-4c88-8024-7aa03525a659">
+  <producedTypes>
+    <selectionType typeId="ab69d78a-491d-47dc-b7c7-9b7b9c2d94f1" valueTypeId="94d3e5da-9e2d-41fd-85f7-24eec5251789"/>
+    <listType typeId="87a6915b-f5e9-4bde-8a0c-9e92a3203556" valueTypeId="08863771-3459-4687-8247-113d3fcd3a22"/>
+    <managerType typeId="d9fdc998-571a-4ed1-806d-5337d6629b82" valueTypeId="53a2d854-2525-42a8-bf6f-4b6fc941b45d"/>
+    <recordSetType typeId="0a16fe7e-62fe-46c7-8188-f60c5ac83e93" valueTypeId="1c27914f-18b2-4e85-90a8-a41a93ade95d"/>
+    <recordKeyType typeId="c936554c-d0dd-42a8-b4f3-6f197a99d4ab" valueTypeId="cac4a440-938f-49b9-9a58-75c5a156f5e3"/>
+    <recordType typeId="5a8ff481-f2ed-46f7-ab8c-9524d36b52a6" valueTypeId="c94f7b6f-1736-4ea0-88e3-05398ca6971f"/>
+    <recordManagerType typeId="3a574740-0bf3-4441-92bc-8d97bcb28361" valueTypeId="877a65c7-0ac7-449b-8b88-9f8666968970"/>
+  </producedTypes>
+  <name>ЗначенияWITSML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения WITSML</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d0ac3b4e-1e69-476f-9156-64bd5a5a253b">
+    <name>Атрибут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атрибут</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="eeea8018-f34b-473e-83fc-17cb8d683450">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+      <types>String</types>
+      <types>Date</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="07ee553e-5858-4e57-8f59-fcc50e9f357f">
+    <name>Единица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="eebfe173-ec92-4c5e-9d81-fa7ad533b3d4">
+    <name>ИмяПоля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя поля</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d6bed200-2a1b-4ebb-9d27-74b469631098">
+    <name>Хэш</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хэш</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f323134e-a1b2-4ba6-8984-974d957206e7">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eac280d3-4a01-49dc-98db-c38bf06e695b">
+    <name>ИдентификаторРодителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор родителя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

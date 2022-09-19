@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b3400c9-862d-4454-aa83-106cd397f9f5">
+  <producedTypes>
+    <objectType typeId="ae0cf5bc-380c-41e8-b59d-f3fa0022c852" valueTypeId="6329fa16-5bf0-4687-b8b3-7b6e250f6b33"/>
+    <refType typeId="84ffdb0c-3aba-4ec9-9a25-786df66c03bc" valueTypeId="6b6f16f4-a06f-4df4-aff0-760c11c722a0"/>
+    <selectionType typeId="5efef7ab-88f4-47f4-a581-c16406e35135" valueTypeId="d66394de-e791-4652-9756-1b4f6335222e"/>
+    <listType typeId="362cdbb3-1585-455e-af0d-218199770383" valueTypeId="9b425a39-f860-4284-9fad-72aa4398e094"/>
+    <managerType typeId="d514acce-e38f-4edc-9bee-74e550f65e03" valueTypeId="d3fdfa03-0a08-4e50-8de9-aadfdb48cbea"/>
+  </producedTypes>
+  <name>ДокументWITSML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документ WITSML</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ДокументWITSML.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ДокументWITSML.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ЗначенияWITSML</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="72a0cdb0-923e-48d9-9de9-96c3d300416d">
+    <name>ТипДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="81c0b12a-bb2c-4f64-9223-e1d8455c5f69">
+    <name>ИмяФайлаWITSML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла WITSML</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da16c53e-45b8-45fd-910e-658d233f9120">
+    <name>ФайлWITSML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл WITSML</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2acf8966-6904-47b1-8793-a15d13dfc3dc">
+    <name>ДатаЗагрузкиФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата загрузки файла</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="06ac16e4-b3f9-43fb-ba68-d7e0ed30a1bc">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bfd21e77-c162-42ce-83ef-7e5099440850">
+  <name>УчетОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет объектов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Учет</picture>
+  </picture>
+  <content>Catalog.Оборудование</content>
+  <content>Catalog.Склады</content>
+  <content>Catalog.Объекты</content>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.witsml_Wells</content>
+  <content>Catalog.witsml_Wellbores</content>
+  <content>Catalog.witsml_Units</content>
+  <content>InformationRegister.ДанныеОбъектов</content>
+</mdclass:Subsystem>

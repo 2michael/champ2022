@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="770c2c6c-d9ad-4404-b529-c2fe8b785307">
+  <producedTypes>
+    <refType typeId="1692ae00-d05c-42b3-b7f0-54ee5c1ad68d" valueTypeId="c8095361-098b-4034-93dd-d93b9c1af745"/>
+    <listType typeId="5f811aa7-8dea-46fd-9fba-0195f4a082bf" valueTypeId="05c724e2-9927-4dd9-a295-de260b555ef4"/>
+    <managerType typeId="d9a648ad-079d-46a6-ac00-a1026b4073aa" valueTypeId="82863339-a8c4-46f6-805d-14826286369d"/>
+  </producedTypes>
+  <name>witsml_Statuses</name>
+  <synonym>
+    <key>ru</key>
+    <value>(witsml) Statuses</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>(witsml) Statuses</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5b458182-8d8c-4453-8b8d-934a825b9d2d">
+    <name>current</name>
+    <synonym>
+      <key>ru</key>
+      <value>Current</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="23565ce0-9f3d-4a3e-b45d-e93a67ac2fb8">
+    <name>deprecated</name>
+    <synonym>
+      <key>ru</key>
+      <value>Deprecated</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

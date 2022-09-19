@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd12e2d3-1c7e-4045-a1f3-9876bedfe7c8">
+  <producedTypes>
+    <refType typeId="ffdc7123-2441-4d70-a04d-8a47d7010a00" valueTypeId="09935e8f-a3cf-472a-ae93-7ac1d8438fe7"/>
+    <listType typeId="2b33c1be-ba9c-42d4-a9ea-bfaaad2baad3" valueTypeId="e0a38a86-dffa-4b44-890c-babe4bf31997"/>
+    <managerType typeId="12d73302-0b23-435e-aafc-09c7f24cb2cf" valueTypeId="61797b51-886a-4ed7-98c7-9aa4b258b208"/>
+  </producedTypes>
+  <name>witsml_UnitConversionType</name>
+  <synonym>
+    <key>ru</key>
+    <value>(witsml) Unit Conversion Type</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fef20724-1a60-44dd-9fea-dfe0ed532277">
+    <name>fraction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Conversion (fraction)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e39e1ac3-cd36-42c6-9595-710b7f5461c6">
+    <name>factor</name>
+    <synonym>
+      <key>ru</key>
+      <value>Conversion (factor)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="239294a8-a637-4e04-a1dd-5949c5fc9883">
+    <name>formula</name>
+    <synonym>
+      <key>ru</key>
+      <value>Conversion (formula)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

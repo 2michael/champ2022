@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6fa00d91-e558-4e33-aef6-bea15581a3af">
+  <name>СистемаУправленияИМониторинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Система управления и мониторинга</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="92a9f6b3-5c59-4279-bb76-4629c2ba612e"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="bb49f0a8-1d35-4973-a246-a01c5d082ebe"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="d5cd73ba-1494-45fc-be15-1a19c9b636e2"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="2e88b88a-17fc-452a-9d18-c3a7d51b7e1c"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="712dd405-4799-4b5b-bd87-0ed5b73102e0"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="080017f6-d584-40ec-8e2d-f9deb8ea15f8"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="43dc2bd5-1317-43c4-a9ce-a01da1d5a8c7"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>NESTRO Digital</vendor>
+  <version>1.1.0.1</version>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <mainSectionPicture/>
+  <defaultStyle>Style.ГПН</defaultStyle>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <logo/>
+  <splash/>
+  <copyright>
+    <key>ru</key>
+    <value>NESTRO Digital</value>
+  </copyright>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.19</compatibilityMode>
+  <languages uuid="2562c554-0757-4427-a2af-48056b71f30d">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.МониторингИКонтроль</subsystems>
+  <subsystems>Subsystem.Проекты</subsystems>
+  <subsystems>Subsystem.ИнтеллектуальныйАнализПроцессов</subsystems>
+  <subsystems>Subsystem.ЗагрузкаИКорректировкаДанных</subsystems>
+  <subsystems>Subsystem.РаботаСДоговорами</subsystems>
+  <subsystems>Subsystem.ОтчетыИАнализ</subsystems>
+  <subsystems>Subsystem.НормативноСправочнаяИнформация</subsystems>
+  <subsystems>Subsystem.Администрирование</subsystems>
+  <subsystems>Subsystem.УслугиИТовары</subsystems>
+  <subsystems>Subsystem.Common</subsystems>
+  <subsystems>Subsystem.УчетОбъектов</subsystems>
+  <styles>Style.ГПН</styles>
+  <commonPictures>CommonPicture.Договоры</commonPictures>
+  <commonPictures>CommonPicture.Мониторинг</commonPictures>
+  <commonPictures>CommonPicture.Учет</commonPictures>
+  <commonPictures>CommonPicture.Настройки</commonPictures>
+  <commonPictures>CommonPicture.Отчетность</commonPictures>
+  <commonPictures>CommonPicture.Справочники</commonPictures>
+  <commonPictures>CommonPicture.Товары</commonPictures>
+  <commonPictures>CommonPicture.БизнесСобытия</commonPictures>
+  <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
+  <sessionParameters>SessionParameter.СотрудникКонтрагента</sessionParameters>
+  <roles>Role.ПолныеПрава</roles>
+  <roles>Role.Подрядчик</roles>
+  <roles>Role.Сотрудник</roles>
+  <roles>Role.Мониторинг</roles>
+  <roles>Role.УправлениеБизнесСобытиями</roles>
+  <commonModules>CommonModule.witsml_Parsing</commonModules>
+  <commonModules>CommonModule.ПроверкаДанныхПоказателей</commonModules>
+  <xDTOPackages>XDTOPackage.obj_bhaRun</xDTOPackages>
+  <xDTOPackages>XDTOPackage.witsml_v1_4_0</xDTOPackages>
+  <xDTOPackages>XDTOPackage.witsml_abstract</xDTOPackages>
+  <scheduledJobs>ScheduledJob.ПроверкаПоказателей</scheduledJobs>
+  <commonCommands>CommonCommand.МониторингОбъектов</commonCommands>
+  <commonCommands>CommonCommand.ОтчетПоСостояниюСкважин</commonCommands>
+  <catalogs>Catalog.Оборудование</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Договоры</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
+  <catalogs>Catalog.witsml_RealtimeData</catalogs>
+  <catalogs>Catalog.witsml_Units</catalogs>
+  <catalogs>Catalog.witsml_Wells</catalogs>
+  <catalogs>Catalog.witsml_Wellbores</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.РолиПользователей</catalogs>
+  <catalogs>Catalog.удалитть_Проекты</catalogs>
+  <catalogs>Catalog.ТипыПроектов</catalogs>
+  <catalogs>Catalog.ТипыОбъектов</catalogs>
+  <catalogs>Catalog.Объекты</catalogs>
+  <documents>Document.ДокументWITSML</documents>
+  <documents>Document.Поступление</documents>
+  <documents>Document.ПоступлениеНаСклад</documents>
+  <documents>Document.ПеремещениеТоваровОборудования</documents>
+  <enums>Enum.witsml_Statuses</enums>
+  <enums>Enum.witsml_LogIndexType</enums>
+  <enums>Enum.witsml_UnitType</enums>
+  <enums>Enum.witsml_UnitConversionType</enums>
+  <reports>Report.witsml_LogAnalys</reports>
+  <reports>Report.ОстаткиНаСкладах</reports>
+  <dataProcessors>DataProcessor.witsml_Обработки</dataProcessors>
+  <dataProcessors>DataProcessor.МониторингОбъектов</dataProcessors>
+  <informationRegisters>InformationRegister.ЗначенияWITSML</informationRegisters>
+  <informationRegisters>InformationRegister.СоответствиеНоменклатурыИПолейWITSML</informationRegisters>
+  <informationRegisters>InformationRegister.witsml_obj_logs_xml</informationRegisters>
+  <informationRegisters>InformationRegister.witsml_obj_log_logData</informationRegisters>
+  <informationRegisters>InformationRegister.АдресацияБизнесПроцессов</informationRegisters>
+  <informationRegisters>InformationRegister.ОтветственныеСотрудникиКонтрагентов</informationRegisters>
+  <informationRegisters>InformationRegister.ОтветственныеПоКонтрагентам</informationRegisters>
+  <informationRegisters>InformationRegister.ДанныеОбъектов</informationRegisters>
+  <informationRegisters>InformationRegister.ПороговыеЗначенияПоказателейWitsml</informationRegisters>
+  <informationRegisters>InformationRegister.СобытияОбъектов</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиНаСкладах</accumulationRegisters>
+  <businessProcesses>BusinessProcess.БизнесПроцесс</businessProcesses>
+  <businessProcesses>BusinessProcess.БизнесСобытия</businessProcesses>
+  <tasks>Task.ЗадачаИсполнителя</tasks>
+</mdclass:Configuration>

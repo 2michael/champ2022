@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ae5c3ef-70d2-46bd-bab0-ee19b6bf06a5">
+  <producedTypes>
+    <selectionType typeId="5ce7665b-33c3-47e8-9d91-5b1d96029ed6" valueTypeId="73994f3d-7519-4ece-8a7d-b639129dcb8f"/>
+    <listType typeId="3ff183ba-e730-48f6-b2a4-a8c5288a0f97" valueTypeId="2cdd4355-b146-4978-a3cf-49dc0dadb49e"/>
+    <managerType typeId="222f4024-1405-455f-965f-59d5382a3467" valueTypeId="7f84447c-a14f-4819-8176-034842fe41e0"/>
+    <recordSetType typeId="1939c348-4e8a-45d4-afdf-26678a3cb46e" valueTypeId="de05f879-c9cd-494c-932f-e6d56e252e9a"/>
+    <recordKeyType typeId="86d29c2b-2e6c-46d8-99ef-1e9076969249" valueTypeId="5ba50bd0-f075-4e71-9642-7711a130f97b"/>
+    <recordType typeId="1f51b0eb-9ab8-41f4-b5fe-75465ce07589" valueTypeId="6c7abe6a-07f8-4e71-99d6-89f42d95dcbb"/>
+    <recordManagerType typeId="20076cdc-0765-4e16-827f-76cea9d36935" valueTypeId="bb81d589-52f0-4666-a9e3-3a624ed690de"/>
+  </producedTypes>
+  <name>ОтветственныеПоКонтрагентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные по контрагентам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="59c5f9b1-e104-4642-84d4-9d234f2e672f">
+    <name>ОтветственныйСотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3575d710-caa3-4d48-ab93-fc4a6f5c9d52">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

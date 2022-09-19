@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5709f32b-2ca3-45db-82ab-7d849390788e">
+  <producedTypes>
+    <objectType typeId="727b00bf-8519-4c2a-9db9-685f6de30726" valueTypeId="65b9bddc-e6d0-4ef3-aae4-a4665c93a52e"/>
+    <managerType typeId="b55d7e1c-df23-460a-941b-237ac4993fb9" valueTypeId="617db489-db86-4de5-9758-b0081cccae26"/>
+  </producedTypes>
+  <name>МониторингОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.МониторингОбъектов.Form.Форма</defaultForm>
+  <tabularSections uuid="db865d6c-2a05-4847-a629-fefad1e77755">
+    <producedTypes>
+      <objectType typeId="ded1c555-a2e7-433d-9431-8a718dbc87a7" valueTypeId="92d3b9ad-2444-4534-9c05-b63c214b1199"/>
+      <rowType typeId="0a754150-7c51-4849-8d8c-8b0529147ec0" valueTypeId="4b6c3d4a-b21c-4ce9-b5c8-5c30f77a7232"/>
+    </producedTypes>
+    <name>ОбъектыОтображения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объекты отображения</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f9bf51b5-efbe-430d-a6dc-2180f0f992f9">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="bc0ab660-6190-4cf9-901f-d6f976ad4101">
+      <name>Описание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>1024</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="185371e8-66bc-4282-a58f-571b5352aee2">
+      <name>КартинкаОтображения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Картинка отображения</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="233a702a-0078-4535-9d68-659b1d35bc8c">
+      <name>КартинкаОтображенияПроблема</name>
+      <synonym>
+        <key>ru</key>
+        <value>Картинка отображения проблема</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5e6264f0-9c09-4b51-9676-0a517019437c">
+      <name>КоординатыШирота</name>
+      <synonym>
+        <key>ru</key>
+        <value>Координаты, широта</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>8</precision>
+          <scale>6</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧРД=.; ЧГ=</value>
+      </format>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="007596af-7eac-4f25-9472-5a3e728d4a0b">
+      <name>КоординатыДолгота</name>
+      <synonym>
+        <key>ru</key>
+        <value>Координаты, долгота</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>8</precision>
+          <scale>6</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧРД=.; ЧГ=</value>
+      </format>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0156ebc6-4c44-451a-a7f1-9d858b070706">
+      <name>Объект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Объекты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="66fb7783-6083-421d-8bce-cb635c3c545c">
+      <name>СтатусПроблема</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус проблема</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="708d5608-7be8-4199-b1e3-f8feca5558f3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1ea49992-5ee9-41be-bede-eaf95f42478e">
+    <name>ФормаДляПереходаПоСсылке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма для перехода по ссылке</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

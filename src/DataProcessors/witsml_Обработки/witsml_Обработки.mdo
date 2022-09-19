@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b404396b-6cc1-4b6b-b7b2-4e2ac2b1ec82">
+  <producedTypes>
+    <objectType typeId="2f9fc996-0bb6-4655-8d33-97eea6dc8772" valueTypeId="2ef63c3f-a3ec-4a25-96a7-832ba784976b"/>
+    <managerType typeId="4969d432-dd31-4ec6-8ff4-70989a46e0e7" valueTypeId="6bbe3461-12e4-433a-9997-ad383934bc1a"/>
+  </producedTypes>
+  <name>witsml_Обработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>(witsml) Обработки</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>(witsml) Обработки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.witsml_Обработки.Form.Форма</defaultForm>
+  <attributes uuid="76539fff-4a06-4367-a6de-4ca961b08418">
+    <name>МоментВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Момент времени</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d3338374-ee03-4391-9953-4ee7c3635d37">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

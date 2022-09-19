@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b8dbe04-ba94-4806-bc9b-1591578339e3">
+  <producedTypes>
+    <refType typeId="101a47f8-a348-4ab7-9f32-5dc35d5fdcf5" valueTypeId="951aa55b-01ec-4360-b0d3-4746a542ff7b"/>
+    <listType typeId="2a318f99-3a1e-461b-9c5e-5a1cdedb5c47" valueTypeId="b427d6e6-67b6-479d-ae70-5524cc7b8334"/>
+    <managerType typeId="5328ced5-b927-4bbf-9e0a-b9b02b6cb2e3" valueTypeId="4462c03c-c4f0-40c2-a709-da00c8a96a7b"/>
+  </producedTypes>
+  <name>witsml_UnitType</name>
+  <synonym>
+    <key>ru</key>
+    <value>(witsml) UnitType</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="614a98d2-7bee-4373-9c84-1d15240bbb16">
+    <name>BaseUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Base units</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="08613985-dd5a-4718-93b4-2456bfd18081">
+    <name>DerivedUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Derived units</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44324463-1b3c-4166-b6c7-c6d0c5999c6e">
+  <name>МониторингИКонтроль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг и контроль</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Мониторинг</picture>
+  </picture>
+  <content>XDTOPackage.witsml_v1_4_0</content>
+  <content>XDTOPackage.witsml_abstract</content>
+  <content>Catalog.witsml_RealtimeData</content>
+  <content>Enum.witsml_Statuses</content>
+  <content>DataProcessor.witsml_Обработки</content>
+  <content>Enum.witsml_LogIndexType</content>
+  <content>InformationRegister.witsml_obj_logs_xml</content>
+  <content>Catalog.witsml_Units</content>
+  <content>Enum.witsml_UnitType</content>
+  <content>Enum.witsml_UnitConversionType</content>
+  <content>Catalog.witsml_Wells</content>
+  <content>Catalog.witsml_Wellbores</content>
+  <content>InformationRegister.witsml_obj_log_logData</content>
+  <content>CommonModule.witsml_Parsing</content>
+  <content>Report.witsml_LogAnalys</content>
+  <content>InformationRegister.ПороговыеЗначенияПоказателейWitsml</content>
+  <content>DataProcessor.МониторингОбъектов</content>
+  <content>InformationRegister.СобытияОбъектов</content>
+  <content>CommonCommand.МониторингОбъектов</content>
+  <content>CommonCommand.ОтчетПоСостояниюСкважин</content>
+</mdclass:Subsystem>

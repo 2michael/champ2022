@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Объекты.StandardCommand.OpenList</commands>
+      <commands>Catalog.Оборудование.StandardCommand.OpenList</commands>
+      <commands>Catalog.Склады.StandardCommand.OpenList</commands>
+      <commands>Catalog.witsml_Units.StandardCommand.OpenList</commands>
+      <commands>Catalog.witsml_Wellbores.StandardCommand.OpenList</commands>
+      <commands>Catalog.witsml_Wells.StandardCommand.OpenList</commands>
+      <commands>Catalog.Номенклатура.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ДанныеОбъектов.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

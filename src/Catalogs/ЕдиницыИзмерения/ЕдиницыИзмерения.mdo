@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c9b616e-82b5-40c7-bad9-274de3545693">
+  <producedTypes>
+    <objectType typeId="151eadcd-eb18-45db-a22b-be09e9d7916a" valueTypeId="e70ce9d0-2848-432c-a02f-98faf3da1bad"/>
+    <refType typeId="70116e03-ec4f-4aab-b023-2a635a71f2d8" valueTypeId="926c5dc1-cec5-4ab6-84a3-313476cf01dd"/>
+    <selectionType typeId="ad8b1bcc-2ccd-409f-aea0-b9632e27c4dc" valueTypeId="14f97537-9ff8-4ae5-868f-abafa7549094"/>
+    <listType typeId="7826297a-1abe-49cb-b11a-e3d8c987dfca" valueTypeId="35ef97ca-fa23-4712-97fa-c5e7bab130db"/>
+    <managerType typeId="d4e87721-c609-4d6e-bb2e-d6666d560c58" valueTypeId="82259952-a8dc-493c-ad2b-d441cdf2b37f"/>
+  </producedTypes>
+  <name>ЕдиницыИзмерения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Единицы измерения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="856008c4-3814-4127-963d-2aa4e3e36efd">
+      <name>День</name>
+      <description>День</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="950275de-c131-41a3-b0ea-7ae0142c6e47">
+      <name>Месяц</name>
+      <description>Месяц</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="789a0785-3126-41ab-949c-60334ac45a97">
+      <name>Час</name>
+      <description>Час</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

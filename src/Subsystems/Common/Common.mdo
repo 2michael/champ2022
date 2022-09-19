@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16aa7c86-68f1-41f3-bf95-e64a1eca9f0f">
+  <name>Common</name>
+  <synonym>
+    <key>ru</key>
+    <value>Common</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Style.ГПН</content>
+</mdclass:Subsystem>

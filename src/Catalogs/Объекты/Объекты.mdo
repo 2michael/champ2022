@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be95bef2-fb0b-427a-93ee-a10c236d0b55">
+  <producedTypes>
+    <objectType typeId="ad9ba40f-eeaa-45a1-86c2-6992039113c2" valueTypeId="213e9ffc-066f-4a77-8258-c81a2f7e5f2d"/>
+    <refType typeId="ff668b8a-ede4-4172-924e-381f5ac83d63" valueTypeId="cf6ebfc6-703f-43c8-9f67-7aaa573f3a8c"/>
+    <selectionType typeId="179f2974-d511-46ff-9a91-6eced7b77051" valueTypeId="4a273161-fabf-4a01-b9a5-5fb99bb9bea5"/>
+    <listType typeId="80465a38-7622-43d3-b673-f101c2bcedce" valueTypeId="a081b64e-1ea9-4a92-a749-0dc86fc542a8"/>
+    <managerType typeId="918297e4-884c-4e51-9e4a-439f5167f2d7" valueTypeId="0927e94e-e435-44e6-8152-643723ac58e2"/>
+  </producedTypes>
+  <name>Объекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Объекты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Объекты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.Объекты.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="437cd74c-c30e-4bd2-8852-1a9173ee3b14">
+    <name>ОбъектУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.witsml_Wellbores</types>
+      <types>CatalogRef.witsml_Wells</types>
+      <types>CatalogRef.witsml_Units</types>
+      <types>CatalogRef.Склады</types>
+      <types>CatalogRef.Оборудование</types>
+      <types>String</types>
+      <types>CatalogRef.Номенклатура</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cacb8663-51ed-4a28-b037-485bd6036d7b">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="538d56d4-9c9a-4365-add9-efdc229bf464">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

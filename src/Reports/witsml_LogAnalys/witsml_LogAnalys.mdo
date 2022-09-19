@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbfb176c-110a-4c3e-8215-2604bac1895e">
+  <producedTypes>
+    <objectType typeId="bb89bd58-3799-4bc7-babd-9d7382a6af7c" valueTypeId="e56dc74e-caa2-4626-ae3f-1d0a39522b91"/>
+    <managerType typeId="1d6861c0-92f2-45a8-9633-ca4d56ab37a9" valueTypeId="d7692692-a529-4a5d-b994-123caae94057"/>
+  </producedTypes>
+  <name>witsml_LogAnalys</name>
+  <synonym>
+    <key>ru</key>
+    <value>(witsml) Log analys</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.witsml_LogAnalys.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.witsml_LogAnalys.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="76122d67-3c60-4b8f-b70b-56e4f64af76b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="915597ab-d854-41a4-8913-cc84dee00a2c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

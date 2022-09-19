@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a8163cb-28c3-40b6-8471-78e03f848824">
+  <producedTypes>
+    <objectType typeId="aa9e12f4-42fc-4460-8ec4-93222acdc48f" valueTypeId="67a7ff4d-2aaa-4ade-a9c9-f13f6539f961"/>
+    <refType typeId="f146754c-d247-42e4-a7f7-74032b819451" valueTypeId="3e525835-2c10-49dc-91fe-4b183ea32fb0"/>
+    <selectionType typeId="e412bac0-3a2d-402c-9129-440b02e79034" valueTypeId="6d3683af-e614-41e5-a0cb-307bc4670730"/>
+    <listType typeId="b8459659-d2c1-4818-8c62-f9ab8f9d1632" valueTypeId="b4f3e127-21b3-41d7-bd8c-abd48410e070"/>
+    <managerType typeId="383455b0-6b02-4129-976d-7bcec6f71a1a" valueTypeId="aac4055e-4fe7-4dc1-b378-81e91100c846"/>
+  </producedTypes>
+  <name>Номенклатура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Номенклатура.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Номенклатура.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="fb479964-f0dd-4f82-b336-70437508f474">
+    <producedTypes>
+      <objectType typeId="b4cbfc66-4768-46fc-9bf7-02b8c84f2b4d" valueTypeId="c06e68c4-358d-4a36-826d-8df79ab474e9"/>
+      <rowType typeId="c7f12c53-c7fc-413f-8a93-168251727986" valueTypeId="9dfbcde4-95cb-47fb-a035-28935f810839"/>
+    </producedTypes>
+    <name>Ресурсы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурсы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b6249ddb-8099-44b8-acd3-7e09d207a7b3">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

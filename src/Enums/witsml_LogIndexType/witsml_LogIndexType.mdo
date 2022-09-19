@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fde63663-c297-4014-aee3-700f90a8db22">
+  <producedTypes>
+    <refType typeId="a074ec95-7b69-43ca-a8c0-aaef340cd322" valueTypeId="6055004b-0e03-4aef-976a-156e9bee69cc"/>
+    <listType typeId="8084d98a-54a7-4407-aa82-35a070cff76c" valueTypeId="22ca8eac-3a03-441d-8134-3fc52cef1493"/>
+    <managerType typeId="0f61bdf5-842d-42da-b910-1076b8cae3c1" valueTypeId="714ec9c7-92f5-4474-8390-857e400cdd22"/>
+  </producedTypes>
+  <name>witsml_LogIndexType</name>
+  <synonym>
+    <key>ru</key>
+    <value>(witsml) LogIndexType</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0806623f-a3bf-423d-8c7b-2705b3e4266c">
+    <name>datetime</name>
+    <synonym>
+      <key>ru</key>
+      <value>date time</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bbafc85f-6db3-40bb-a1e2-15d7c71d4913">
+    <name>elapsedtime</name>
+    <synonym>
+      <key>ru</key>
+      <value>elapsed time</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a630244c-975a-41de-9f31-f456a56f389c">
+    <name>length</name>
+    <synonym>
+      <key>ru</key>
+      <value>Length</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e96d7b32-dfbc-4877-8c65-9cb1b897ec19">
+    <name>measureddepth</name>
+    <synonym>
+      <key>ru</key>
+      <value>measured depth</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f82920ce-8121-423f-bf11-aec940c5faa6">
+    <name>verticaldepth</name>
+    <synonym>
+      <key>ru</key>
+      <value>vertical depth</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6b1d9164-80fa-4e55-951e-dea1c6296d3d">
+    <name>other</name>
+    <synonym>
+      <key>ru</key>
+      <value>other</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a5328805-5dfc-48c3-9917-1be307fc72ff">
+    <name>unknown</name>
+    <synonym>
+      <key>ru</key>
+      <value>unknown</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

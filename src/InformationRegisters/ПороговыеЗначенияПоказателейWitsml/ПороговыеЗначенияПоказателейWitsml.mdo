@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fa297f3-86b3-4d40-b84b-d9a1da068c86">
+  <producedTypes>
+    <selectionType typeId="48ca7af6-f002-4537-a538-cce7dead3573" valueTypeId="2c44044f-7713-4a92-8db7-e2cd5a045749"/>
+    <listType typeId="8c60f913-88b8-454a-ba89-2f30c4ea747e" valueTypeId="0d5dd064-37f2-49df-bba4-a6ff9c1ade97"/>
+    <managerType typeId="2d765ef6-84d2-4621-9c99-ac3c5ecddd31" valueTypeId="33c7922f-90f1-4c6e-84a2-f9650ec35d23"/>
+    <recordSetType typeId="d336eb6e-e43f-4c00-bb99-03aae39ea72c" valueTypeId="5d347da9-55c8-4407-9616-2c7c6cf7ff1e"/>
+    <recordKeyType typeId="6d4b5472-ab7a-4ea3-bb7e-049334cb2bf0" valueTypeId="cff46aaf-5ffe-4821-b62b-6fd945157db0"/>
+    <recordType typeId="8434f194-9d7b-49f1-a295-ccef51552aae" valueTypeId="c9b49878-e8ef-4a41-9259-f52984d06fc0"/>
+    <recordManagerType typeId="921cc49e-cd97-4064-868d-aeab6a918740" valueTypeId="355711fa-9eda-4798-9bd3-74c1b2122be9"/>
+  </producedTypes>
+  <name>ПороговыеЗначенияПоказателейWitsml</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пороговые значения показателей (witsml)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d086fe7b-8fa4-47d4-9d9b-33f8bb916d34">
+    <name>МинимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальное значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>32</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="07badc68-dfa0-4f79-9c69-4e078c3576c4">
+    <name>МаксимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>32</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="469f3879-9ca9-4962-a81c-b68f505fdc42">
+    <name>РольОтветственного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль ответственного</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РолиПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="867c4126-68d9-410d-b278-5641f7608c94">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.witsml_RealtimeData</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1b0397eb-590c-4247-81bf-96ba3d82925f">
+    <name>ТипИндекса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип индекса</value>
+    </synonym>
+    <type>
+      <types>EnumRef.witsml_LogIndexType</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

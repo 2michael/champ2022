@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20b0e1fb-574a-4c4c-ad44-708f63ed17c9">
+  <producedTypes>
+    <selectionType typeId="98658eec-c96b-4255-906f-449df46f615c" valueTypeId="caca1ec0-d6c4-4934-beef-88b6abdb884a"/>
+    <listType typeId="9141d0d0-f819-4be4-bd96-dc26ef337f46" valueTypeId="c64ad9de-9241-439a-9f0c-e88786e49d5d"/>
+    <managerType typeId="64495680-380b-43d0-9fa9-f0214ac5c824" valueTypeId="853fb765-50d3-4756-960e-624ac54c21bd"/>
+    <recordSetType typeId="c3df0067-328c-43ed-80a0-f8be42fa0808" valueTypeId="637e282b-e3e1-4e99-a121-ec27272349ca"/>
+    <recordKeyType typeId="65b0fce1-a766-4567-bdaf-da9eb690fa79" valueTypeId="36702ad0-f9e3-44de-af4f-d5f31d3980c6"/>
+    <recordType typeId="226863e4-e649-4e8f-a57f-9aa86a6d6f96" valueTypeId="bfc307ae-074f-4c4f-aa64-9bb877483a4d"/>
+    <recordManagerType typeId="51d03bbb-92a6-4cab-8eb3-4038b5664b14" valueTypeId="b7ab7ca0-60ee-4daa-b229-52e3f3979e6c"/>
+  </producedTypes>
+  <name>witsml_obj_log_logData</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал показателей (obj_log logData)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7642d0f8-f788-460c-ad03-5b73be46b69a">
+    <name>Value</name>
+    <synonym>
+      <key>ru</key>
+      <value>Value</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="0fde2742-0611-46b9-bbe5-696f031ce37b">
+    <name>LogName</name>
+    <synonym>
+      <key>ru</key>
+      <value>Log name</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="85a75912-3e2e-4d44-8967-8a72853d176d">
+    <name>IndexType</name>
+    <synonym>
+      <key>ru</key>
+      <value>Index type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.witsml_LogIndexType</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="2d8690c0-b38e-4b0c-943d-f02d91c3b51b">
+    <name>Well</name>
+    <synonym>
+      <key>ru</key>
+      <value>Well</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.witsml_Wells</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e6313070-3a60-46c8-be5d-df92d27d27b7">
+    <name>Wellbore</name>
+    <synonym>
+      <key>ru</key>
+      <value>Wellbore</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.witsml_Wellbores</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f6fa9887-40fe-4383-bc0b-570501402f84">
+    <name>IndexClass</name>
+    <synonym>
+      <key>ru</key>
+      <value>Index class</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.witsml_RealtimeData</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8c389156-0b2b-4068-8bdb-27f15be21822">
+    <name>Index</name>
+    <synonym>
+      <key>ru</key>
+      <value>Index</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d7b8434b-45af-4aed-8d31-dcca3a73e943">
+    <name>RealtimeData</name>
+    <synonym>
+      <key>ru</key>
+      <value>Realtime data</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.witsml_RealtimeData</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

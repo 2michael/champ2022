@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0838f4ad-e775-4251-87e6-c9a7337f8e7e">
+  <name>witsml_v1_4_0</name>
+  <synonym>
+    <key>ru</key>
+    <value>WITSML v1.4.0</value>
+  </synonym>
+  <comment>http://w3.energistics.org/schema/witsml_v1.4.0_data/index_witsml_schema.html</comment>
+  <namespace>http://www.witsml.org/schemas/1series</namespace>
+</mdclass:XDTOPackage>

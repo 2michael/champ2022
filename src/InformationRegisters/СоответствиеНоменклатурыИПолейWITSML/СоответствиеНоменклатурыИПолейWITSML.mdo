@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8f1c1b6-3d54-468c-a1b8-ef731a01bf2a">
+  <producedTypes>
+    <selectionType typeId="b3675375-7b32-403f-85e2-16ad58d90ecb" valueTypeId="0637452a-c158-4539-b1f1-3f911a94a856"/>
+    <listType typeId="d473b25f-a41b-4bdc-965f-1dbcfbab78a1" valueTypeId="5cb377ab-da6c-4ef2-b1f2-18d305e0a00a"/>
+    <managerType typeId="c2160136-8162-48b5-b6ec-cdb968aa0689" valueTypeId="9a3910b9-ec4d-4558-a965-2fd6463b66a2"/>
+    <recordSetType typeId="33b3880c-073f-440a-8eab-e6ac111453d1" valueTypeId="a65e84c0-6b1d-401e-954e-46d63494aae0"/>
+    <recordKeyType typeId="23afbc8a-ba86-4bbd-95f3-988c75fbb2c2" valueTypeId="74ad8f9a-75cd-4a8a-bb49-657a0e831c4a"/>
+    <recordType typeId="140584bc-f516-439d-80a8-2e0f1c7545bd" valueTypeId="59e991a0-08dd-4322-99ef-c4398eaef2c8"/>
+    <recordManagerType typeId="35885c33-bca6-4f97-a3b5-981f1832da22" valueTypeId="a46e789d-9e80-4774-aa10-faa7c333f340"/>
+  </producedTypes>
+  <name>СоответствиеНоменклатурыИПолейWITSML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие номенклатуры и полей WITSML</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="1104892c-1b41-475b-9d02-5148dcd480e7">
+    <name>ПсевдонимПоляWITSML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Псевдоним поля WITSML</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="8fcc5c9b-7d32-422d-81be-03acdda9c7f6">
+    <name>ПолеWITSML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поле WITSML</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="59ac1030-4544-42c6-8da2-641610f9d189">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

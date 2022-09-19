@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50b04117-2232-4bae-918f-b0241e007a0f">
+  <name>ПроверкаПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка показателей</value>
+  </synonym>
+  <methodName>CommonModule.ПроверкаДанныхПоказателей.ПроверитьПоказатели</methodName>
+  <description>ПроверкаПоказателей</description>
+  <key>ПроверкаПоказателей</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

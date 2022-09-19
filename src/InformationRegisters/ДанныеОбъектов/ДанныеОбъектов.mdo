@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="059c4d3e-57d2-4ea3-a67f-5d15d1d027eb">
+  <producedTypes>
+    <selectionType typeId="6109d8af-fd33-4bfa-b4b5-c633227faa1b" valueTypeId="e17d6f64-4eb1-4d73-bd85-b4e8985ff1ba"/>
+    <listType typeId="388cae16-91fb-4d08-9637-a2cdf6b70817" valueTypeId="1c68feb3-05ad-4bff-92f8-e47511535b36"/>
+    <managerType typeId="8d60fb1c-d625-43a6-a021-bd911cf7a7dc" valueTypeId="b79861da-923f-4e23-b993-5feebc5c3adb"/>
+    <recordSetType typeId="cb0b8b2d-60ac-482b-b3ee-b72de5b1dfc1" valueTypeId="47248880-3585-4fc0-b45e-9780c40b1bef"/>
+    <recordKeyType typeId="0065a931-2cb9-4c6b-a8d8-6604c39a702e" valueTypeId="9b7ad54e-537b-4900-974b-26ed0251a56b"/>
+    <recordType typeId="b0310d8a-ee7f-4c3e-b1a5-f57308b71212" valueTypeId="4eecfdac-2eb0-4b1a-81e8-f1a949fb2b6e"/>
+    <recordManagerType typeId="ba99f690-9b1f-4e0f-ba71-374096dbc720" valueTypeId="eae9e5a7-4c6f-4511-8826-d3d844cdbb75"/>
+  </producedTypes>
+  <name>ДанныеОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="92670786-858f-46af-b737-9bd85f9ebe3c">
+    <name>КоординатыШирота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Координаты, широта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>6</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8d874d09-a3bc-405c-9fb1-ae77bf5f7155">
+    <name>КоординатыДолгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Координаты, долгота</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>6</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="cfc7d6fa-1b7b-4ce2-aa2e-0960ef6ad1ad">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="0910f7c0-2bc2-4dc5-b749-6d2ad197162c">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Объекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
