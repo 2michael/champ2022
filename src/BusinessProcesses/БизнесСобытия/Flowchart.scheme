@@ -117,16 +117,16 @@
 				</Border>
 				<Picture/>
 				<PictureSize>AutoSize</PictureSize>
-				<Subprocess/>
+				<Subprocess></Subprocess>
 				<TaskDescription>Выполнить все действия процесса</TaskDescription>
 			</Properties>
 			<Events>
-				<Event name="BeforeCreateTasks"/>
-				<Event name="OnCreateTask"/>
-				<Event name="OnCreateSubBusinessProcesses"/>
-				<Event name="OnExecute"/>
-				<Event name="BeforeExecute">ВложенныйПроцессПередВыполнением</Event>
 				<Event name="BeforeCreateSubBusinessProcesses">ВложенныйПроцессПередСозданиемВложенныхБизнесПроцессов</Event>
+				<Event name="BeforeCreateTasks"/>
+				<Event name="BeforeExecute">ВложенныйПроцессПередВыполнением</Event>
+				<Event name="OnCreateSubBusinessProcesses"/>
+				<Event name="OnCreateTask"/>
+				<Event name="OnExecute"/>
 			</Events>
 		</SubBusinessProcess>
 		<ConnectionLine id="4">

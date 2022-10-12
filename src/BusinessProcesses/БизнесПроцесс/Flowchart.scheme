@@ -158,18 +158,18 @@
 						<Value xsi:nil="true"/>
 					</AddressingAttribute>
 					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
-						<Value xmlns:d7p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d7p1:DesignTimeRef">Catalog.РолиПользователей.Администратор</Value>
+						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.РолиПользователей.Администратор</Value>
 					</AddressingAttribute>
 				</AddressingAttributes>
 			</Properties>
 			<Events>
-				<Event name="InteractiveActivationProcessing"/>
 				<Event name="BeforeCreateTasks">ИсполнениеПередСозданиемЗадач</Event>
-				<Event name="OnCreateTask"/>
-				<Event name="OnExecute"/>
-				<Event name="CheckExecutionProcessing"/>
 				<Event name="BeforeExecute"/>
 				<Event name="BeforeExecuteInteractively"/>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="OnCreateTask"/>
+				<Event name="OnExecute"/>
 			</Events>
 		</Activity>
 		<ConnectionLine id="5">
